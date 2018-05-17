@@ -1,0 +1,29 @@
+body {
+	background-image: url("EMOJI.jpg");
+	background-color: red;
+	cursor: none;
+}
+p {
+	font-family:Impact;
+}
+h1#h01 {
+	font-family:Impact;
+}
+a:link {
+    color: #E7E7E7	
+}
+a:visited {
+    color: #808080	
+}
+a:hover {
+	background-color: #00AAEE;
+}
+#b01 {
+	background-color: #AA00FF;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	font-size: 24px;
+	display: inline-block;
+	padding: 15px 32px;
+}

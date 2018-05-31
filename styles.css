@@ -17,11 +17,11 @@ a:hover {
 	background-color: #00AAEE;
 }
 #b01 {
-	background-color: #F00;
+	background-color: #A80;
 	border: none;
 	cursor: pointer;
 	text-align: center;
-	font-size: 72px;
+	font-size: 36px;
 	display: inline-block;
 	padding: 15px 32px;
 }

@@ -1,0 +1,13 @@
+body {
+	background-color: black;
+}
+.button {
+	background: linear-gradient(-37deg, red, blue);
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 2px;
+	border-radius: 17px;
+}

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<title>My Website</title>
+	<title>Water Bottle Manager</title>
 	<link rel="stylesheet" href="gamestyles.css">
 	<script src="bottle.js"></script>
 </head>
@@ -12,10 +12,22 @@
 	<button class="button" onclick="water()">Get Water</button>
 	<center><p><span id="bottlelabel">0</span> Water Bottles (Sized <span id="bttl-size">236</span> <span id="bttl-size-label">ml</span>)</center>
 	<button class="button" onclick="plastic()">Get Bottles</button>
-	<center><p><span id="selllabel">0</span> full bottles of water to sell for $<span id="worth">2</span> each.</p></center>
-	<button class="button" onclick="bottle()">Bottle up water (Requires <span id="bttl-size2">236</span> <span id="bttl-size-label">mL</span>)</button>
+	<center><p><span id="selllabel">0</span> full bottles of water to sell for $<span id="worth">1</span> each.</p></center>
+	<button class="button" onclick="bottle()">Bottle up water (Requires <span id="bttl-size2">236</span> <span id="bttl-size-label2">mL</span>)</button>
 	<br>
 	<button class="button" onclick="sell()">Sell 1 Bottle</button>
 	<br><br>
-	<button class="button" onclick="pbup()">Upgrade Bottle Production ($<span id="pbupcost">100</span>)</button>
+	<button class="button" onclick="pbup()">Upgrade Bottle Production ($<span id="pbupcost">100</span>)</button><br>
+	<button class="button" onclick="sbup()">Upgrade Bottle Size ($<span id="sbupcost">200</span>)</button>
+	<!-- STATS AREA -->
+	<div id="stats-area">
+	<button class="statsbutton" onclick="checkstats()">Update Statistics</button>
+	<p><span id="stat-water">0</span>L of water fetched</p>
+	<p><span id="stat-bottles">0</span> bottles produced</p>
+	<p><span id="stat-filled">0</span> bottles filled</p>
+	<p><span id="stat-sold">0</span> bottles of water sold</p>
+	<p>$<span id="stat-money">0</span> earnt</p>
+	<p>$<span id="stat-spent">0</span> spent</p>
+	<p><span id="stat-upgrades">0</span> upgrades purchased</p>
+	</div>
 </body>

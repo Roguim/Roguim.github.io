@@ -16,3 +16,8 @@ h1, h2, h3, h4, h5, h6, p {
 	position: relative;
 	left: 52%;
 }
+.stats-area {
+	position: absolute;
+	left: 0px;
+	bottom: 100px;
+}

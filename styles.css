@@ -53,3 +53,15 @@ h1, h2, h3, h4, h5, h6, p {
 	background: linear-gradient(to right, #673ab7, #f44336);
 	border: none;
 }
+#backgroundlogo {
+	position: absolute;
+	top: 210px;
+	left: 492px;
+	width: 290px;
+	height: 290px;
+}
+#vid2 {
+	position: absolute;
+	bottom: 190px;
+	left: 0px;
+}

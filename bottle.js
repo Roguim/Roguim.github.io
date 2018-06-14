@@ -1,11 +1,12 @@
 var litres = 0;
-var value = 2;
+var value = 1;
 var litreadd = 0.5;
 var bottleadd = 1;
 var bottlesize = 236;
 var bottles = 0;
 var tosell = 0;
 var cash = 0;
+var pbucost = 100;
 function water() {
 	litres = litres + litreadd;
 	document.getElementById("litrelabel").innerHTML = litres;
@@ -27,8 +28,19 @@ function bottle() {
 	}
 }
 function sell() {
-	if (tosell > 1) {
+	if (tosell > 0) {
 		cash = cash + value;
 		tosell = tosell - 1;
+		document.getElementById("money").innerHTML = cash;
+        document.getElementById("selllabel").innerHTML = tosell;
+	}
+}
+function pbup() {
+	if (cash > pbucost) {
+		cash = cash - pbucost;
+		bottleadd = ( bottleadd * 2 ) + 1;
+		pbucost = ( pbucost * 2 ) + 150;
+		document.getElementById("money").innerHTML = cash;
+		document.getElementById("pbupcost").innerHTML = pbucost;
 	}
 }

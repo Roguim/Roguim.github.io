@@ -7,11 +7,12 @@ var bottles = 0;
 var tosell = 0;
 var cash = 0;
 var watercap = 100;
-var sizemaxed = 0;
 
-/* UPGRADE PRICES */
+/* UPGRADE STUFF */
 var pbucost = 100;
 var sbucost = 200;
+var sizemaxed = 0;
+
 
 /* STATS */
 var totwater = 0;
@@ -22,6 +23,9 @@ var totmoney = 0;
 var totupgrades = 0;
 var totspent = 0;
 
+function save() {
+	
+}
 
 function checkstats() {
 	document.getElementById("stat-water").innerHTML = totwater;

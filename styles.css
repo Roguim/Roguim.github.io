@@ -65,3 +65,14 @@ h1, h2, h3, h4, h5, h6, p {
 	bottom: 190px;
 	left: 0px;
 }
+g-content {
+    display: none;
+	background-color: #888888;
+	border-radius: 10px;
+	border: none;
+}
+games {
+	background-color: #5555FF;
+	border-radius: 10px;
+	border: none;
+}

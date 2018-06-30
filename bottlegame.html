@@ -5,9 +5,13 @@
 	<script src="js\bottle.js"></script>
 </head>
 <body id="bod">
+	<!--<div id="buttons">
+	<button class="button" onclick="sh-click()">Buttons</button>
+	<button class="button" onclick="sh-ups()">Upgrades</button>
+	</div>-->
 	<br>
 	<br>
-	<center><h1>Money: $<span id="money">0</span></h1></center><br><br>
+	<center><h1>Money: $<span id="money">0</span></h1></center><br><br><div id="click" class="show">
 	<center><p><span id="litrelabel">0</span> litres of water</p></center>
 	<button class="button" onclick="water()">Get Water</button>
 	<center><p><span id="bottlelabel">0</span> Water Bottles (Sized <span id="bttl-size">236</span> <span id="bttl-size-label">ml</span>)</center>
@@ -17,8 +21,16 @@
 	<br>
 	<button class="button" onclick="sell()">Sell 1 Bottle</button>
 	<br><br>
+	</div>
+	
+	
+	<!-- UPGRADES AREA -->
+	<div id="ups" class="">
 	<button class="button" onclick="pbup()">Upgrade Bottle Production ($<span id="pbupcost">100</span>)</button><br>
 	<button class="button" onclick="sbup()">Upgrade Bottle Size ($<span id="sbupcost">200</span>)</button>
+	</div>
+	
+	
 	<!-- STATS AREA -->
 	<div id="stats-area">
 	<button class="statsbutton" onclick="checkstats()">Update Statistics</button>

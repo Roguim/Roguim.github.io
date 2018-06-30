@@ -39,31 +39,15 @@ function checkstats() {
 
 function water() {
 	if (litres != watercap || litres > watercap) {
-		crit = Math.floor((Math.random() * 100) + 1);
-		if (crit == 63) {
-			litres = litres + (litreadd * 3);
-			totwater = totwater + (litreadd * 3);
-			document.getElementById("litrelabel").innerHTML = litres;
-		}
-		else {
-			litres = litres + litreadd;
-			totwater = totwater + litreadd;
-			document.getElementById("litrelabel").innerHTML = litres;
-		}
+		litres = litres + litreadd;
+		totwater = totwater + litreadd;
+		document.getElementById("litrelabel").innerHTML = litres;
 	}
 }
 function plastic() {
-	crit = Math.floor((Math.random() * 100) + 1);
-	if (crit == 63) {
-		bottles = bottles + (bottleadd * 3);
-		totbottles = totbottles + (bottleadd * 3);
-		document.getElementById("bottlelabel").innerHTML = bottles;
-	}
-	else {
-		bottles = bottles + bottleadd;
-		totbottles = totbottles + bottleadd;
-		document.getElementById("bottlelabel").innerHTML = bottles;
-	}
+	bottles = bottles + bottleadd;
+	totbottles = totbottles + bottleadd;
+	document.getElementById("bottlelabel").innerHTML = bottles;
 }
 function bottle() {
 	if ((litres * 1000) > bottlesize) {

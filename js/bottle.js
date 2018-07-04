@@ -81,7 +81,7 @@ function csell() {
 	sell();
 }
 function water() {
-	if (litres != watercap || litres > watercap) {
+	if (litres < watercap) {
 		crit = Math.floor((Math.random() * 100) + 1);
 		if (crit == 63) {
 			litres = litres + (litreadd * 3);
@@ -145,7 +145,7 @@ function pbup() {
 function sbup() {
 	if (cash > sbucost - 1) {
 		if (sizemaxed != 1) {
-			if (bottlesize = 236) { /*Upgrade cost 200*/
+			if (bottlesize == 236) { /*Upgrade cost 200*/
 				cash = cash - sbucost;
 				bottlesize = 355;
 				totspent = totspent + sbucost;
@@ -157,7 +157,7 @@ function sbup() {
 				document.getElementById("bttl-size").innerHTML = bottlesize;
 				document.getElementById("bttl-size2").innerHTML = bottlesize;
 				document.getElementById("sbupcost").innerHTML = sbucost;
-			} else if (bottlesize = 355) { /*Upgrade cost 800*/
+			} else if (bottlesize == 355) { /*Upgrade cost 800*/
 				cash = cash - sbucost;
 				bottlesize = 500;
 				totspent = totspent + pbucost;
@@ -169,7 +169,7 @@ function sbup() {
 				document.getElementById("bttl-size").innerHTML = bottlesize;
 				document.getElementById("bttl-size2").innerHTML = bottlesize;
 				document.getElementById("sbupcost").innerHTML = sbucost;
-			} else if (bottlesize = 500) { /*Upgrade cost 2,600*/
+			} else if (bottlesize == 500) { /*Upgrade cost 2,600*/
 				cash = cash - sbucost;
 				bottlesize = 590;
 				totspent = totspent + pbucost;
@@ -181,7 +181,7 @@ function sbup() {
 				document.getElementById("bttl-size").innerHTML = bottlesize;
 				document.getElementById("bttl-size2").innerHTML = bottlesize;
 				document.getElementById("sbupcost").innerHTML = sbucost;
-			} else if (bottlesize = 590) { /*Upgrade cost 8,000*/
+			} else if (bottlesize == 590) { /*Upgrade cost 8,000*/
 				cash = cash - sbucost;
 				bottlesize = 710;
 				totspent = totspent + pbucost;
@@ -193,7 +193,7 @@ function sbup() {
 				document.getElementById("bttl-size").innerHTML = bottlesize;
 				document.getElementById("bttl-size2").innerHTML = bottlesize;
 				document.getElementById("sbupcost").innerHTML = sbucost;
-			} else if (bottlesize = 710) { /*Upgrade cost 72,800*/
+			} else if (bottlesize == 710) { /*Upgrade cost 72,800*/
 				cash = cash - sbucost;
 				bottlesize = 1000;
 				totspent = totspent + pbucost;
@@ -207,7 +207,7 @@ function sbup() {
 				document.getElementById("bttl-size2").innerHTML = bottlesize;
 				document.getElementById("bttl-size-label2").innerHTML = "L";
 				document.getElementById("sbupcost").innerHTML = sbucost;
-			} else if (bottlesize = 1000) { /*Upgrade cost 218,600*/
+			} else if (bottlesize == 1000) { /*Upgrade cost 218,600*/
 				cash = cash - sbucost;
 				bottlesize = 1250;
 				totspent = totspent + pbucost;
@@ -221,7 +221,7 @@ function sbup() {
 				document.getElementById("bttl-size2").innerHTML = bottlesize;
 				document.getElementById("bttl-size-label2").innerHTML = "L";
 				document.getElementById("sbupcost").innerHTML = sbucost;
-			} else if (bottlesize = 1250) { /*Upgrade cost 1,968,200*/
+			} else if (bottlesize == 1250) { /*Upgrade cost 1,968,200*/
 				cash = cash - sbucost;
 				bottlesize = 1500;
 				totspent = totspent + pbucost;
@@ -235,7 +235,7 @@ function sbup() {
 				document.getElementById("bttl-size2").innerHTML = bottlesize;
 				document.getElementById("bttl-size-label2").innerHTML = "L";
 				document.getElementById("sbupcost").innerHTML = sbucost;
-			} else if (bottlesize = 1500) { /*Upgrade cost 5,904,800*/
+			} else if (bottlesize == 1500) { /*Upgrade cost 5,904,800*/
 				cash = cash - sbucost;
 				bottlesize = 1750;
 				totspent = totspent + pbucost;
@@ -249,7 +249,7 @@ function sbup() {
 				document.getElementById("bttl-size2").innerHTML = bottlesize;
 				document.getElementById("bttl-size-label2").innerHTML = "L";
 				document.getElementById("sbupcost").innerHTML = sbucost;
-			} else if (bottlesize = 1750) { /*Upgrade cost 17,714,600*/
+			} else if (bottlesize == 1750) { /*Upgrade cost 17,714,600*/
 				cash = cash - sbucost;
 				bottlesize = 2000;
 				totspent = totspent + pbucost;
@@ -263,7 +263,7 @@ function sbup() {
 				document.getElementById("bttl-size2").innerHTML = bottlesize;
 				document.getElementById("bttl-size-label2").innerHTML = "L";
 				document.getElementById("sbupcost").innerHTML = sbucost;
-			} else if (bottlesize = 2000) { /*Upgrade cost 53,144,000*/
+			} else if (bottlesize == 2000) { /*Upgrade cost 53,144,000*/
 				cash = cash - sbucost;
 				bottlesize = 2200;
 				totspent = totspent + pbucost;
@@ -277,7 +277,7 @@ function sbup() {
 				document.getElementById("bttl-size2").innerHTML = bottlesize;
 				document.getElementById("bttl-size-label2").innerHTML = "L";
 				document.getElementById("sbupcost").innerHTML = sbucost;
-			} else if (bottlesize = 2200) { /*Upgrade cost 159,432,200*/
+			} else if (bottlesize == 2200) { /*Upgrade cost 159,432,200*/
 				cash = cash - sbucost;
 				bottlesize = 2500;
 				totspent = totspent + pbucost;
@@ -291,7 +291,7 @@ function sbup() {
 				document.getElementById("bttl-size2").innerHTML = bottlesize;
 				document.getElementById("bttl-size-label2").innerHTML = "L";
 				document.getElementById("sbupcost").innerHTML = sbucost;
-			} else if (bottlesize = 2500) { /*Upgrade cost 478,296,800*/
+			} else if (bottlesize == 2500) { /*Upgrade cost 478,296,800*/
 				cash = cash - sbucost;
 				bottlesize = 5000;
 				totspent = totspent + pbucost;
@@ -305,7 +305,7 @@ function sbup() {
 				document.getElementById("bttl-size2").innerHTML = bottlesize;
 				document.getElementById("bttl-size-label2").innerHTML = "L";
 				document.getElementById("sbupcost").innerHTML = sbucost;
-			} else if (bottlesize = 5000) { /*Upgrade cost 1,434,890,600*/
+			} else if (bottlesize == 5000) { /*Upgrade cost 1,434,890,600*/
 				cash = cash - sbucost;
 				bottlesize = 7500;
 				totspent = totspent + pbucost;
@@ -319,7 +319,7 @@ function sbup() {
 				document.getElementById("bttl-size2").innerHTML = bottlesize;
 				document.getElementById("bttl-size-label2").innerHTML = "L";
 				document.getElementById("sbupcost").innerHTML = sbucost;
-			} else if (bottlesize = 7500) { /*Upgrade cost 4,304,672,000*/
+			} else if (bottlesize == 7500) { /*Upgrade cost 4,304,672,000*/
 				cash = cash - sbucost;
 				bottlesize = 10000;
 				totspent = totspent + pbucost;

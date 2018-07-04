@@ -37,3 +37,43 @@ h1, h2, h3, h4, h5, h6, p {
 .show#ups {
 	display: block;
 }*/
+#structures {
+	display: block;
+	width: 25%;
+	position: absolute;
+	height: 50%;
+}
+#structure-content {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 47px;
+}
+#struct-head {
+	background-color: #E700FF;
+}
+#structures:hover #structure-content {
+	display: block;
+	background-color: #4300AA;
+}
+#sb1 {
+	position: absolute;
+	left: 0px;
+	top: 2%;
+}
+#sb2 {
+	position: absolute;
+	left: 0px;
+	top: 22%;
+}
+#sb3 {
+	position: absolute;
+	left: 0px;
+	top: 51%;
+}
+#sb4 {
+	position: absolute;
+	left: 0px;
+	top: 71%;
+}

@@ -5,17 +5,10 @@
 	<script src="js\bottle.js"></script>
 </head>
 <body id="bod">
-	<!-- BUTTONS -->
-	<div id="structures">
-		<h2 id="struct-head">Structures (HOVER)</h2>
-		<div id="structure-content">
-			<button class="button" id="sb1" onclick="mill()">Get a water mill ($<span id="lscost">100</span>)</button>
-			<button class="button" id="sb2" onclick="fact()">Get a bottle assembly line ($<span id="pscost">100</span>)</button>
-			<button class="button" id="sb3" onclick="btlr()">Get a water bottler ($<span id="bscost">100</span>)</button>
-			<button class="button" id="sb4" onclick="mrch()">Get a merchant ($<span id="sscost">100</span>)</button>
-		</div>
-	</div>
-	
+	<!--<div id="buttons">
+	<button class="button" onclick="sh-click()">Buttons</button>
+	<button class="button" onclick="sh-ups()">Upgrades</button>
+	</div>-->
 	<br>
 	<br>
 	<center><h1>Money: $<span id="money">0</span></h1></center><br><br><div id="click" class="show">
@@ -40,7 +33,7 @@
 	
 	<!-- STATS AREA -->
 	<div id="stats-area">
-	<button class="statsbutton" onclick="checkstats()">Manual Update</button>
+	<button class="statsbutton" onclick="checkstats()">Update Statistics</button>
 	<p><span id="stat-water">0</span>L of water fetched</p>
 	<p><span id="stat-bottles">0</span> bottles produced</p>
 	<p><span id="stat-filled">0</span> bottles filled</p>

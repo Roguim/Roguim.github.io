@@ -8,6 +8,26 @@ var tosell = 0;
 var cash = 0;
 var watercap = 100;
 
+var autoupdate = setInterval(checkstats, 15000);
+
+/* STRUCTURE STUFF */
+var pcost = 100;
+var lcost = 100;
+var bcost = 100;
+var scost = 100;
+
+var plaps = 0;
+var litps = 0;
+var botps = 0;
+var selps = 0;
+var pps = 0;
+var lps = 0;
+var bps = 0;
+var sps = 0;
+
+var tick = setInterval(doStuff, 1000);
+
+
 /* UPGRADE STUFF */
 var pbucost = 100;
 var sbucost = 200;
@@ -112,6 +132,7 @@ function sbup() {
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = bottlesize;
+				document.getElementById("bttl-size2").innerHTML = bottlesize;
 				document.getElementById("sbupcost").innerHTML = sbucost;
 			} else if (bottlesize = 355) { /*Upgrade cost 800*/
 				cash = cash - sbucost;
@@ -123,6 +144,7 @@ function sbup() {
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = bottlesize;
+				document.getElementById("bttl-size2").innerHTML = bottlesize;
 				document.getElementById("sbupcost").innerHTML = sbucost;
 			} else if (bottlesize = 500) { /*Upgrade cost 2,600*/
 				cash = cash - sbucost;
@@ -134,6 +156,7 @@ function sbup() {
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = bottlesize;
+				document.getElementById("bttl-size2").innerHTML = bottlesize;
 				document.getElementById("sbupcost").innerHTML = sbucost;
 			} else if (bottlesize = 590) { /*Upgrade cost 8,000*/
 				cash = cash - sbucost;
@@ -145,6 +168,7 @@ function sbup() {
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = bottlesize;
+				document.getElementById("bttl-size2").innerHTML = bottlesize;
 				document.getElementById("sbupcost").innerHTML = sbucost;
 			} else if (bottlesize = 710) { /*Upgrade cost 72,800*/
 				cash = cash - sbucost;
@@ -156,6 +180,9 @@ function sbup() {
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = bottlesize;
+				document.getElementById("bttl-size-label").innerHTML = "L";
+				document.getElementById("bttl-size2").innerHTML = bottlesize;
+				document.getElementById("bttl-size-label2").innerHTML = "L";
 				document.getElementById("sbupcost").innerHTML = sbucost;
 			} else if (bottlesize = 1000) { /*Upgrade cost 218,600*/
 				cash = cash - sbucost;
@@ -167,6 +194,9 @@ function sbup() {
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = bottlesize;
+				document.getElementById("bttl-size-label").innerHTML = "L";
+				document.getElementById("bttl-size2").innerHTML = bottlesize;
+				document.getElementById("bttl-size-label2").innerHTML = "L";
 				document.getElementById("sbupcost").innerHTML = sbucost;
 			} else if (bottlesize = 1250) { /*Upgrade cost 1,968,200*/
 				cash = cash - sbucost;
@@ -178,6 +208,9 @@ function sbup() {
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = bottlesize;
+				document.getElementById("bttl-size-label").innerHTML = "L";
+				document.getElementById("bttl-size2").innerHTML = bottlesize;
+				document.getElementById("bttl-size-label2").innerHTML = "L";
 				document.getElementById("sbupcost").innerHTML = sbucost;
 			} else if (bottlesize = 1500) { /*Upgrade cost 5,904,800*/
 				cash = cash - sbucost;
@@ -189,6 +222,9 @@ function sbup() {
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = bottlesize;
+				document.getElementById("bttl-size-label").innerHTML = "L";
+				document.getElementById("bttl-size2").innerHTML = bottlesize;
+				document.getElementById("bttl-size-label2").innerHTML = "L";
 				document.getElementById("sbupcost").innerHTML = sbucost;
 			} else if (bottlesize = 1750) { /*Upgrade cost 17,714,600*/
 				cash = cash - sbucost;
@@ -200,6 +236,9 @@ function sbup() {
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = bottlesize;
+				document.getElementById("bttl-size-label").innerHTML = "L";
+				document.getElementById("bttl-size2").innerHTML = bottlesize;
+				document.getElementById("bttl-size-label2").innerHTML = "L";
 				document.getElementById("sbupcost").innerHTML = sbucost;
 			} else if (bottlesize = 2000) { /*Upgrade cost 53,144,000*/
 				cash = cash - sbucost;
@@ -211,6 +250,9 @@ function sbup() {
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = bottlesize;
+				document.getElementById("bttl-size-label").innerHTML = "L";
+				document.getElementById("bttl-size2").innerHTML = bottlesize;
+				document.getElementById("bttl-size-label2").innerHTML = "L";
 				document.getElementById("sbupcost").innerHTML = sbucost;
 			} else if (bottlesize = 2200) { /*Upgrade cost 159,432,200*/
 				cash = cash - sbucost;
@@ -222,6 +264,9 @@ function sbup() {
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = bottlesize;
+				document.getElementById("bttl-size-label").innerHTML = "L";
+				document.getElementById("bttl-size2").innerHTML = bottlesize;
+				document.getElementById("bttl-size-label2").innerHTML = "L";
 				document.getElementById("sbupcost").innerHTML = sbucost;
 			} else if (bottlesize = 2500) { /*Upgrade cost 478,296,800*/
 				cash = cash - sbucost;
@@ -233,6 +278,9 @@ function sbup() {
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = bottlesize;
+				document.getElementById("bttl-size-label").innerHTML = "L";
+				document.getElementById("bttl-size2").innerHTML = bottlesize;
+				document.getElementById("bttl-size-label2").innerHTML = "L";
 				document.getElementById("sbupcost").innerHTML = sbucost;
 			} else if (bottlesize = 5000) { /*Upgrade cost 1,434,890,600*/
 				cash = cash - sbucost;
@@ -244,6 +292,9 @@ function sbup() {
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = bottlesize;
+				document.getElementById("bttl-size-label").innerHTML = "L";
+				document.getElementById("bttl-size2").innerHTML = bottlesize;
+				document.getElementById("bttl-size-label2").innerHTML = "L";
 				document.getElementById("sbupcost").innerHTML = sbucost;
 			} else if (bottlesize = 7500) { /*Upgrade cost 4,304,672,000*/
 				cash = cash - sbucost;
@@ -256,8 +307,81 @@ function sbup() {
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = bottlesize;
+				document.getElementById("bttl-size-label").innerHTML = "L";
+				document.getElementById("bttl-size2").innerHTML = bottlesize;
+				document.getElementById("bttl-size-label2").innerHTML = "L";
 				document.getElementById("sbupcost").innerHTML = "Maximum Reached";
 			}
+		}
+	}
+}
+function mill() {
+	if (cash > lcost - 1) {
+		totspent = totspent + lcost;
+		cash = cash - lcost;
+		lcost = lcost * 1.27;
+		litps = litps + 1;
+		document.getElementById("lscost").innerHTML = lcost;
+		document.getElementById("money").innerHTML = cash;
+	}
+}
+function fact() {
+	if (cash > pcost - 1) {
+		totspent = totspent + pcost;
+		cash = cash - pcost;
+		pcost = pcost * 1.27;
+		plaps = plaps + 1;
+		document.getElementById("pscost").innerHTML = pcost;
+		document.getElementById("money").innerHTML = cash;
+	}
+}
+function btlr() {
+	if (cash > bcost - 1) {
+		totspent = totspent + bcost;
+		cash = cash - bcost;
+		bcost = bcost * 1.27;
+		botps = botps + 1;
+		document.getElementById("bscost").innerHTML = bcost;
+		document.getElementById("money").innerHTML = cash;
+	}
+}
+function mrch() {
+	if (cash > scost - 1) {
+		totspent = totspent + scost;
+		cash = cash - scost;
+		scost = scost * 1.36;
+		selps = selps + 1;
+		document.getElementById("sscost").innerHTML = scost;
+		document.getElementById("money").innerHTML = cash;
+	}
+}
+function doStuff() {
+	pps = 0;
+	lps = 0;
+	bps = 0;
+	sps = 0;
+	if (plaps != 0) {
+		while (pps != plaps) {
+			plastic();
+			pps = pps + 1;
+		}
+	}
+	if (litps != 0) {
+		while (lps != litps) {
+			water();
+			lps = lps + 1;
+		}
+	}
+	if (botps != 0) {
+		while (bps != botps) {
+			bottle();
+			bps = bps + 1;
+		}
+	}
+	if (selps != 0) {
+		while (sps != selps) {
+			sell();
+			sps = sps + 1;
 		}
 	}
 }

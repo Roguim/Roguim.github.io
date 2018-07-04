@@ -7,7 +7,9 @@ var bottles = 0;
 var tosell = 0;
 var cash = 0;
 var watercap = 100;
+var clicks = 0;
 
+var resetclick = setInterval(resetclicks, 1000);
 var autoupdate = setInterval(checkstats, 15000);
 
 /* STRUCTURE STUFF */
@@ -43,6 +45,12 @@ var totmoney = 0;
 var totupgrades = 0;
 var totspent = 0;
 
+function resetclicks() {
+	if (clicks > 23) {
+		window.location.href = "https://roguim.github.io/noswiperno.html";
+	}
+	clicks = 0;
+}
 function save() {
 	
 }
@@ -56,7 +64,22 @@ function checkstats() {
 	document.getElementById("stat-spent").innerHTML = totspent;
 	document.getElementById("stat-upgrades").innerHTML = totupgrades;
 }
-
+function cwater() {
+	clicks = clicks + 1;
+	water();
+}
+function cplastic() {
+	clicks = clicks + 1;
+	plastic();
+}
+function cbottle() {
+	clicks = clicks + 1;
+	bottle();
+}
+function csell() {
+	clicks = clicks + 1;
+	sell();
+}
 function water() {
 	if (litres != watercap || litres > watercap) {
 		crit = Math.floor((Math.random() * 100) + 1);

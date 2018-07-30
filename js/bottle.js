@@ -8,9 +8,18 @@ var tosell = 0;
 var cash = 0;
 var watercap = 100;
 var clicks = 0;
+var dangermode = 0;
 
 var resetclick = setInterval(resetclicks, 1000);
 var autoupdate = setInterval(checkstats, 15000);
+
+/* PRESTIGE STUFF */
+var prestiges = 0;
+var costmultiplier = 1;
+var presmoney = 0;
+
+var addprescoins = 0;
+var prestigecoins = 0;
 
 /* STRUCTURE STUFF */
 var pcost = 100;
@@ -46,8 +55,10 @@ var totupgrades = 0;
 var totspent = 0;
 
 function resetclicks() {
-	if (clicks > 23) {
-		window.location.href = "https://roguim.github.io/noswiperno.html";
+	if (dangermode != 1) {
+		if (clicks > 23) {
+			window.location.href = "https://roguim.github.io/noswiperno.html";
+		}
 	}
 	clicks = 0;
 }
@@ -127,6 +138,7 @@ function sell() {
 		tosell = tosell - 1;
 		totsold = totsold + 1;
 		totmoney = totmoney + value;
+		presmoney = presmoney + value;
 		document.getElementById("money").innerHTML = cash;
         document.getElementById("selllabel").innerHTML = tosell;
 	}
@@ -416,3 +428,48 @@ function sh-ups() {
 	document.getElementById("click").classList.remove("show");
 	document.getElementById("ups").classList.add("show");
 }*/
+
+function prestige() {
+	if (presmoney > 99999) {
+		prestiges = prestiges + 1;
+		costmultiplier = prestiges * 3;
+		litres = 0;
+		value = 1;
+		litreadd = 0.5;
+		bottleadd = 1;
+		bottlesize = 236;
+		bottles = 0;
+		tosell = 0;
+		cash = 0;
+		watercap = 100;
+		clicks = 0;
+		
+		
+		pcost = 100 * costmultiplier;
+		lcost = 100 * costmultiplier;
+		bcost = 100 * costmultiplier;
+		scost = 100 * costmultiplier;
+
+		plaps = 0;
+		litps = 0;
+		botps = 0;
+		selps = 0;
+		pps = 0;
+		lps = 0;
+		bps = 0;
+		sps = 0;
+		
+		
+		pbucost = 100 * costmultiplier;
+		sbucost = 200 * costmultiplier;
+		sizemaxed = 0;
+		
+		
+		presmoney = 0;
+		
+		addprescoins = Math.floor(cash / 10000);
+		prestigecoins = prestigecoins + addprescoins;
+		
+		value = value + (prestigecoins * 1.25);
+	}
+}

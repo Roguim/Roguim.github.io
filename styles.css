@@ -104,3 +104,12 @@ games {
 .circle {
 	border-radius: 1000px;
 }
+#betalink {
+	position: absolute;
+	top: 32.13;
+	left: 73.59%;
+	width: 100px;
+	height: 100px;
+	border: none;
+	background: linear-gradient(to top left, #aaff00, #e79830);
+}

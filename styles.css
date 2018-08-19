@@ -113,3 +113,11 @@ games {
 	border: none;
 	background: linear-gradient(to top left, #aaff00, #e79830);
 }
+#hypesquadlogo {
+	position: absolute;
+	top: 46.13%;
+	left: 27.62%;
+	width: 300px;
+	height: 300px;
+	border: none;
+}

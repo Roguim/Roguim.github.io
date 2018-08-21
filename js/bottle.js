@@ -471,5 +471,17 @@ function prestige() {
 		prestigecoins = prestigecoins + addprescoins;
 		
 		value = value + (prestigecoins * 1.25);
+		
+		document.getElementById("money").innerHTML = cash;
+		document.getElementById("pscost").innerHTML = pcost;
+		document.getElementById("lscost").innerHTML = lcost;
+		document.getElementById("bscost").innerHTML = bcost;
+		document.getElementById("sscost").innerHTML = scost;
+		document.getElementById("litrelabel").innerHTML = litres;
+		document.getElementById("worth").innerHTML = value;
+		document.getElementById("bttl-size").innerHTML = bottlesize;
+		document.getElementById("bttl-size2").innerHTML = bottlesize;
+		document.getElementById("bottlelabel").innerHTML = bottles;
+		document.getElementById("selllabel").innerHTML = litres;
 	}
 }

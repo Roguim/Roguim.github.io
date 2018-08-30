@@ -43,6 +43,7 @@ var halfsecond = setInterval(pointofivesecondly, 50);
 /* UPGRADE STUFF */
 var pbucost = 100;
 var sbucost = 200;
+var lcucost = 150;
 var sizemaxed = 0;
 
 
@@ -174,6 +175,18 @@ function pbup() {
 		totupgrades = totupgrades + 1;
 		document.getElementById("money").innerHTML = cash;
 		document.getElementById("pbupcost").innerHTML = pbucost;
+	}
+}
+function lcup() {
+	if (cash > lcucost) {
+		cash = cash - lcucost;
+		totspent = totspent + lcucost;
+		watercap = watercap * 4;
+		lcucost = ( lcucost * 1.25 ) + 30;
+		totupgrades = totupgrades + 1;
+		document.getElementById("cap").innerHTML = watercap;
+		document.getElementById("money").innerHTML = cash;
+		document.getElementById("lcupcost").innerHTML = lcucost;
 	}
 }
 function sbup() {
@@ -442,14 +455,14 @@ function doStuff() {
 		}
 	}
 }
-/*function sh-click() {
-	document.getElementById("click").classList.add("show");
-	document.getElementById("ups").classList.remove("show");
+function sh-click() {
+	document.getElementById("click").style.display = "block";
+	document.getElementById("ups").style.display = "none";
 }
 function sh-ups() {
-	document.getElementById("click").classList.remove("show");
-	document.getElementById("ups").classList.add("show");
-}*/
+	document.getElementById("click").style.display = "none";
+	document.getElementById("ups").style.display = "block";
+}
 
 function prestige() {
 	if (presmoney > 99999) {
@@ -484,6 +497,7 @@ function prestige() {
 		
 		pbucost = 100 * costmultiplier;
 		sbucost = 200 * costmultiplier;
+		lcucost = 150 * costmultiplier;
 		sizemaxed = 0;
 		
 		
@@ -507,5 +521,7 @@ function prestige() {
 		document.getElementById("selllabel").innerHTML = tosell;
 		document.getElementById("pbupcost").innerHTML = pbucost;
 		document.getElementById("sbupcost").innerHTML = sbucost;
+		document.getElementById("lcupcost").innerHTML = lcucost;
+		document.getElementById("cap").innerHTML = watercap;
 	}
 }

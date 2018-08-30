@@ -77,3 +77,19 @@ h1, h2, h3, h4, h5, h6, p {
 	left: 0px;
 	top: 71%;
 }
+#click {
+	display: block;
+}
+#ups {
+	display: block;
+}
+.changebutton {
+	background-color: #E7E7E7;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	/*display: inline-block;*/
+	font-size: 36px;
+	margin: 4px 2px;
+	display: none;
+}

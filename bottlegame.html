@@ -6,6 +6,11 @@
 </head>
 <body id="bod">
 	<!-- BUTTONS -->
+	<div id="changetypes">
+		<button class="changebutton" id="chclick" onclick="sh-click()">Click</button>
+		<button class="changebutton" id="chups" onclick="sh-ups()">Upgrades and Structures</button>
+	</div>
+	
 	<div id="structures">
 		<h2 id="struct-head">Structures (HOVER)</h2>
 		<div id="structure-content">
@@ -18,23 +23,25 @@
 	
 	<br>
 	<br>
-	<center><h1>Money: $<span id="money">0</span></h1></center><br><br><div id="click" class="show">
-	<center><p><span id="litrelabel">0</span> litres of water</p></center>
-	<button class="button" onclick="cwater()">Get Water</button>
-	<center><p><span id="bottlelabel">0</span> Water Bottles (Sized <span id="bttl-size">236</span> <span id="bttl-size-label">ml</span>)</center>
-	<button class="button" onclick="cplastic()">Get Bottles</button>
-	<center><p><span id="selllabel">0</span> full bottles of water to sell for $<span id="worth">1</span> each.</p></center>
-	<button class="button" onclick="cbottle()">Bottle up water (Requires <span id="bttl-size2">236</span> <span id="bttl-size-label2">mL</span>)</button>
-	<br>
-	<button class="button" onclick="csell()">Sell 1 Bottle</button>
-	<br><br>
+	<center><h1>Money: $<span id="money">0</span></h1></center><br><br>
+	<div id="click">
+		<center><p><span id="litrelabel">0</span> litres of water (maximum: <span id="cap">100</span>L)</p></center>
+		<button class="button" onclick="cwater()">Get Water</button>
+		<center><p><span id="bottlelabel">0</span> Water Bottles (Sized <span id="bttl-size">236</span> <span id="bttl-size-label">ml</span>)</center>
+		<button class="button" onclick="cplastic()">Get Bottles</button>
+		<center><p><span id="selllabel">0</span> full bottles of water to sell for $<span id="worth">1</span> each.</p></center>
+		<button class="button" onclick="cbottle()">Bottle up water (Requires <span id="bttl-size2">236</span> <span id="bttl-size-label2">mL</span>)</button>
+		<br>
+		<button class="button" onclick="csell()">Sell 1 Bottle</button>
+		<br><br>
 	</div>
 	
 	
 	<!-- UPGRADES AREA -->
-	<div id="ups" class="">
-	<button class="button" onclick="pbup()">Upgrade Bottle Production ($<span id="pbupcost">100</span>)</button><br>
-	<button class="button" onclick="sbup()">Upgrade Bottle Size ($<span id="sbupcost">200</span>)</button>
+	<div id="ups">
+		<button class="button" onclick="pbup()">Upgrade Bottle Production ($<span id="pbupcost">100</span>)</button><br>
+		<button class="button" onclick="sbup()">Upgrade Bottle Size ($<span id="sbupcost">200</span>)</button><br>
+		<button class="button" onclick="lcup()">Upgrade Water Capacity ($<span id="lcupcost">150</span>)</button>
 	</div>
 	
 	<!-- PRESTIGE -->

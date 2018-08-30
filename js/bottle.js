@@ -455,14 +455,14 @@ function doStuff() {
 		}
 	}
 }
-function sh-click() {
+/*function sh-click() {
 	document.getElementById("click").style.display = "block";
 	document.getElementById("ups").style.display = "none";
 }
 function sh-ups() {
 	document.getElementById("click").style.display = "none";
 	document.getElementById("ups").style.display = "block";
-}
+}*/
 
 function prestige() {
 	if (presmoney > 99999) {

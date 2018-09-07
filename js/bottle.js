@@ -10,6 +10,8 @@ var watercap = 100;
 var clicks = 0;
 var dangermode = 0;
 
+var scale = 0;
+
 var resetclick = setInterval(resetclicks, 1000);
 var autoupdate = setInterval(checkstats, 15000);
 
@@ -64,14 +66,16 @@ function condense() {
 	var condensedcash = cash;
 	var measurement = "";
 	var timescondensed = 0;
-	var measurementlist = { 1:'K', 2:'M', 3:'B', 4:'T', 5:'Qu', 6:'Qi', 7:'Sx', 8:'Sp', 9:'Oc', 10:'No', 11:'Dc', 12:'UDc', 13:'DDc', 14:'TDc', 15:'QuDc', 16:'QiDc', 17:'SxDc', 18:'SpDc', 19:'OcDc', 20:'NoDc', 21:'Vi' }
+	var measurechoice = { 0:'measurementlist', 1:'measurementlist2' }
+	var measurementlist2 = { 1:'Thousand', 2:'Million', 3:'Billion', 4:'Trillion' }
+	var measurementlist = { 1:'K', 2:'M', 3:'B', 4:'T', 5:'Qu', 6:'Qi', 7:'Sx', 8:'Sp', 9:'Oc', 10:'No', 11:'Dc', 12:'UDc', 13:'DDc', 14:'TDc', 15:'QuDc', 16:'QiDc', 17:'SxDc', 18:'SpDc', 19:'OcDc', 20:'NoDc', 21:'Vi', 22:'UVi', 23:'DVi', 24:'TVi', 25:'QuVi', 26:'QiVi', 27:'SxVi', 28:'SpVi', 29:'OcVi', 30:'NoVi', 31:'Tri' }
 	while (condensedcash > 999) {
 		condensedcash = condensedcash / 1000;
 		timescondensed = timescondensed + 1;
-		measurement = measurementlist[timescondensed];
-		if (timescondensed >= 22) {
-			var postvi = timescondensed - 21;
-			measurement = "Vi+"+postvi;
+		measurement = /*measurechoice[scale]*/measurementlist[timescondensed];
+		if (timescondensed >= 32) {
+			var posttri = timescondensed - 31;
+			measurement = /*measurechoice[scale][31]+"+"*/"Tri+"+posttri;
 		}
 	}
 	document.getElementById("money").innerHTML = condensedcash+" "+measurement;

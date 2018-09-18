@@ -3,6 +3,7 @@ var rights = 0;
 var speedrights = 1;
 var games = 0;
 var speedgames = 0.03;
+var sps = 0;
 
 var second = setInterval(secondly, 1000);
 var pointofsec = setInterval(pointfive, 50);
@@ -12,6 +13,7 @@ function pointfive() {
 	condense()
 }
 function secondly() {
+	money = money + sps * 3;
 }
 
 function condense() {
@@ -59,5 +61,10 @@ function prgrm() {
 	document.getElementById("gamecount").innerHTML = displaygames;
 	if (games > .9900000000000007) {
 		document.getElementById("gcountunlock").style.display = "block";
+		document.getElementById("sellingzone").style.display = "block";
 	}
+}
+
+function sell() {
+	sps = sps + 1;
 }

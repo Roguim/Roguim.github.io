@@ -4,6 +4,11 @@ var speedrights = 1;
 var games = 0;
 var speedgames = 0.03;
 var sps = 0;
+var sold = 0;
+var rightcount = 0;
+var light = 0;
+
+var gameslist = { 1:'TsarWars', 2:'MicU', 3:'Demons Inc.' };
 
 var second = setInterval(secondly, 1000);
 var pointofsec = setInterval(pointfive, 50);
@@ -14,6 +19,8 @@ function pointfive() {
 }
 function secondly() {
 	money = money + sps * 3;
+	sold = sold + sps;
+	document.getElementById("scount").innerHTML = sold;
 }
 
 function condense() {
@@ -50,6 +57,9 @@ function grights() {
 		document.getElementById("rperecent").innerHTML = rights * 100;
 	} else {
 		document.getElementById("programming").style.display = "block";
+		rightcount = rightcount + 1;
+		rpercent = 0;
+		rights = 0;
 	}
 }
 
@@ -67,4 +77,16 @@ function prgrm() {
 
 function sell() {
 	sps = sps + 1;
+}
+
+function toglight() {
+	if (light == 0) {
+		var light = 1;
+		var bod = document.getElementsByTagName("body");
+		bod[0].style.backgroundColor = "white";
+	} else {
+		var light = 0;
+		var bod = document.getElementsByTagName("body");
+		bod[0].style.backgroundColor = "black";
+	}
 }

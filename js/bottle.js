@@ -214,7 +214,7 @@ function sbup() {
 				totspent = totspent + pbucost;
 				totupgrades = totupgrades + 1;
 				sbucost = (sbucost * 3) + 200;
-				value = 40 * (prestigecoins * 1.25);
+				value = 40 * ((prestigecoins * 1.25)+1);
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = bottlesize;
@@ -226,7 +226,7 @@ function sbup() {
 				totspent = totspent + pbucost;
 				totupgrades = totupgrades + 1;
 				sbucost = (sbucost * 3) + 200;
-				value = 80 * (prestigecoins * 1.25);
+				value = 80 * ((prestigecoins * 1.25)+1);
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = bottlesize;
@@ -238,7 +238,7 @@ function sbup() {
 				totspent = totspent + pbucost;
 				totupgrades = totupgrades + 1;
 				sbucost = (sbucost * 3) + 200;
-				value = 200 * (prestigecoins * 1.25);
+				value = 200 * ((prestigecoins * 1.25)+1);
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = bottlesize;
@@ -250,7 +250,7 @@ function sbup() {
 				totspent = totspent + pbucost;
 				totupgrades = totupgrades + 1;
 				sbucost = (sbucost * 3) + 200;
-				value = 300 * (prestigecoins * 1.25);
+				value = 300 * ((prestigecoins * 1.25)+1);
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = "1";
@@ -264,7 +264,7 @@ function sbup() {
 				totspent = totspent + pbucost;
 				totupgrades = totupgrades + 1;
 				sbucost = (sbucost * 3) + 200;
-				value = 500 * (prestigecoins * 1.25);
+				value = 500 * ((prestigecoins * 1.25)+1);
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = "1.25";
@@ -278,7 +278,7 @@ function sbup() {
 				totspent = totspent + pbucost;
 				totupgrades = totupgrades + 1;
 				sbucost = (sbucost * 3) + 200;
-				value = 600 * (prestigecoins * 1.25);
+				value = 600 * ((prestigecoins * 1.25)+1);
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = "1.5";
@@ -292,7 +292,7 @@ function sbup() {
 				totspent = totspent + pbucost;
 				totupgrades = totupgrades + 1;
 				sbucost = (sbucost * 3) + 200;
-				value = 700 * (prestigecoins * 1.25);
+				value = 700 * ((prestigecoins * 1.25)+1);
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = "1.75";
@@ -306,7 +306,7 @@ function sbup() {
 				totspent = totspent + pbucost;
 				totupgrades = totupgrades + 1;
 				sbucost = (sbucost * 3) + 200;
-				value = 800 * (prestigecoins * 1.25);
+				value = 800 * ((prestigecoins * 1.25)+1);
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = "2";
@@ -320,7 +320,7 @@ function sbup() {
 				totspent = totspent + pbucost;
 				totupgrades = totupgrades + 1;
 				sbucost = (sbucost * 3) + 200;
-				value = 950 * (prestigecoins * 1.25);
+				value = 950 * ((prestigecoins * 1.25)+1);
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = "2.2";
@@ -334,7 +334,7 @@ function sbup() {
 				totspent = totspent + pbucost;
 				totupgrades = totupgrades + 1;
 				sbucost = (sbucost * 3) + 200;
-				value = 1100 * (prestigecoins * 1.25);
+				value = 1100 * ((prestigecoins * 1.25)+1);
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = "2.5";
@@ -348,7 +348,7 @@ function sbup() {
 				totspent = totspent + pbucost;
 				totupgrades = totupgrades + 1;
 				sbucost = (sbucost * 3) + 200;
-				value = 1400 * (prestigecoins * 1.25);
+				value = 1400 * ((prestigecoins * 1.25)+1);
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = "5";
@@ -362,7 +362,7 @@ function sbup() {
 				totspent = totspent + pbucost;
 				totupgrades = totupgrades + 1;
 				sbucost = (sbucost * 3) + 200;
-				value = 18000 * (prestigecoins * 1.25);
+				value = 18000 * ((prestigecoins * 1.25)+1);
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = "7.5";
@@ -377,7 +377,7 @@ function sbup() {
 				totupgrades = totupgrades + 1;
 				sbucost = 0;
 				sizemaxed = 1;
-				value = 250000 * (prestigecoins * 1.25);
+				value = 250000 * ((prestigecoins * 1.25)+1);
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = "10";

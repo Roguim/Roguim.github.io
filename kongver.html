@@ -1,3 +1,131 @@
+<!DOCTYPE html>
+<head>
+<style>
+body {
+	background-color: black;
+	overflow: hidden;
+}
+h1, h2, h3, h4, h5, h6, p {
+	color: white;
+}
+.button {
+	background: linear-gradient(-37deg, red, blue);
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 36px;
+	margin: 4px 2px;
+	border-radius: 12px;
+	position: relative;
+	left: 52%;
+	width: 30%;
+}
+#stats-area {
+	position: absolute;
+	left: 0%;
+	bottom: 0%;
+}
+/*.show {
+	display: block;
+}
+#click {
+	display: none;
+}
+#ups {
+	display: none;
+}
+.show#click {
+	display: block;
+}
+.show#ups {
+	display: block;
+}*/
+#structures {
+	display: block;
+	width: 30%;
+	position: absolute;
+	height: 50%;
+}
+#structure-content {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 47px;
+}
+#struct-head {
+	background-color: #E700FF;
+}
+#structures:hover #structure-content {
+	display: block;
+	background-color: #4300AA;
+}
+#sb1 {
+	position: absolute;
+	left: 0px;
+	top: 2%;
+	width: 100%;
+	text-font-size: 6px;
+}
+#sb2 {
+	position: absolute;
+	left: 0px;
+	top: 22%;
+	width: 100%;
+	text-font-size: 6px;
+}
+#sb3 {
+	position: absolute;
+	left: 0px;
+	top: 51%;
+	width: 100%;
+	text-font-size: 6px;
+}
+#sb4 {
+	position: absolute;
+	left: 0px;
+	top: 71%;
+	width: 100%;
+	text-font-size: 6px;
+}
+#sb1, #sb2, #sb3, #sb4 button {
+	text-font-size: 6px;
+}
+#click {
+	display: block;
+}
+#ups {
+	display: block;
+}
+.changebutton {
+	background-color: #E7E7E7;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	/*display: inline-block;*/
+	font-size: 36px;
+	margin: 4px 2px;
+	display: none;
+}
+#capac {
+	left: 33%;
+}
+#production {
+	left: 33%;
+}
+#sizz {
+	position: absolute;
+	left: 64%;
+	top: 65%;
+}
+#prestbutton {
+	position: absolute;
+	left: 64%;
+	top: 77%;
+}
+</style>
+<script>
 var litres = 0;
 var value = 1;
 var litreadd = 0.5;
@@ -8,7 +136,7 @@ var tosell = 0;
 var cash = 0;
 var watercap = 100;
 var clicks = 0;
-var dangermode = 0;
+var dangermode = 1;
 
 var scale = 0;
 
@@ -81,14 +209,14 @@ function condense() {
 	document.getElementById("money").innerHTML = condensedcash+" "+measurement;
 }
 
-/*function resetclicks() {
+function resetclicks() {
 	if (dangermode != 1) {
 		if (clicks > 23) {
 			window.location.href = "https://roguim.github.io/noswiperno.html";
 		}
 	}
 	clicks = 0;
-}*/
+}
 function save() {
 	
 }
@@ -202,7 +330,7 @@ function sbup() {
 				totspent = totspent + sbucost;
 				totupgrades = totupgrades + 1;
 				sbucost = (sbucost * 3) + 200;
-				value = 10 * ((prestigecoins * 1.25) + 1);
+				value = 10 * (prestigecoins * 1.25);
 				document.getElementById("worth").innerHTML = value;
 				document.getElementById("money").innerHTML = cash;
 				document.getElementById("bttl-size").innerHTML = bottlesize;
@@ -529,3 +657,63 @@ function prestige() {
 		document.getElementById("cap").innerHTML = watercap;
 	}
 }
+</script>
+</head>
+<body id="bod">
+	<!-- BUTTONS -->
+	<div id="changetypes">
+		<button class="changebutton" id="chclick" onclick="sh-click()">Click</button>
+		<button class="changebutton" id="chups" onclick="sh-ups()">Upgrades and Structures</button>
+	</div>
+	
+	<div id="structures">
+		<h2 id="struct-head">Structures (HOVER)</h2>
+		<div id="structure-content">
+			<button class="button" id="sb1" onclick="mill()">Get a water mill ($<span id="lscost">100</span>)</button>
+			<button class="button" id="sb2" onclick="fact()">Get a bottle assembly line ($<span id="pscost">100</span>)</button>
+			<button class="button" id="sb3" onclick="btlr()">Get a water bottler ($<span id="bscost">100</span>)</button>
+			<button class="button" id="sb4" onclick="mrch()">Get a merchant ($<span id="sscost">100</span>)</button>
+		</div>
+	</div>
+	
+	<br>
+	<br>
+	<center><h1>Money: $<span id="money">0</span></h1></center><br><br>
+	<div id="click">
+		<center><p><span id="litrelabel">0</span> litres of water (maximum: <span id="cap">100</span>L)</p></center>
+		<button class="button" onclick="cwater()">Get Water</button>
+		<center><p><span id="bottlelabel">0</span> Water Bottles (Sized <span id="bttl-size">236</span> <span id="bttl-size-label">ml</span>)</center>
+		<button class="button" onclick="cplastic()">Get Bottles</button>
+		<center><p><span id="selllabel">0</span> full bottles of water to sell for $<span id="worth">1</span> each.</p></center>
+		<button class="button" onclick="cbottle()">Bottle up water (Requires <span id="bttl-size2">236</span> <span id="bttl-size-label2">mL</span>)</button>
+		<br>
+		<button class="button" onclick="csell()">Sell 1 Bottle</button>
+		<br><br>
+	</div>
+	
+	
+	<!-- UPGRADES AREA -->
+	<div id="ups">
+		<button class="button" onclick="pbup()" id="production">Upgrade Bottle Production ($<span id="pbupcost">100</span>)</button><br>
+		<button class="button" onclick="sbup()" id="sizz">Upgrade Bottle Size ($<span id="sbupcost">200</span>)</button><br>
+		<button class="button" onclick="lcup()" id="capac">Upgrade Water Capacity ($<span id="lcupcost">150</span>)</button>
+	</div>
+	
+	<!-- PRESTIGE -->
+	<div id="prestigearea">
+	<button class="button" onclick="prestige()" id="prestbutton">Prestige (REQUIRES 100,000)</button>
+	</div>
+	
+	
+	<!-- STATS AREA -->
+	<div id="stats-area">
+	<button class="statsbutton" onclick="checkstats()">Manual Update</button>
+	<p><span id="stat-water">0</span>L of water fetched</p>
+	<p><span id="stat-bottles">0</span> bottles produced</p>
+	<p><span id="stat-filled">0</span> bottles filled</p>
+	<p><span id="stat-sold">0</span> bottles of water sold</p>
+	<p>$<span id="stat-money">0</span> earnt</p>
+	<p>$<span id="stat-spent">0</span> spent</p>
+	<p><span id="stat-upgrades">0</span> upgrades purchased</p>
+	</div>
+</body>

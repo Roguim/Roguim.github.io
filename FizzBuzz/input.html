@@ -4,7 +4,13 @@
 	<script src="input.js"></script>
 </head>
 <body style="overflow: shown">
+	<p>Number we will stop at.</p>
+	<input id="goto" type="number" value="100"></input>
+	<p>Number of different things (Eg. 2, then you will set two variables like 3 and 5 to say what you will have as the Fizz and Buzz etc.)</p>
+	<input id="items" type="number" value="2" min="2"></input>
+	<button onclick="configure()">Configure</button>
 	<h1>OUTPUT IN CONSOLE AND BELOW</h1>
+	<h1 style="display: none;" id="generating">Generating. This may take a while.</h1>
 	<p style="position: absolute; width: 100%; height: 80%;" id="out"><!--type="text" disabled--><!--value="output will go here"--></p>
-	<button onclick="fizzbuzz()" style="position: absolute; top: 90%; left: 30%;">RUN</button>
+	<button onclick="startfizz()" style="position: absolute; top: 90%; left: 30%;">RUN</button>
 </body>

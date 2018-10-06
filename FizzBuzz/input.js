@@ -16,13 +16,16 @@ function configure() {
 		if (inputted1 == null || inputted1 == "") {
 			console.log('User cancelled Input 1.');
 			return;
-		} else if (Number.isInteger(parseInt(inputted1, 10)) == true) {
-			console.log(parseInt(inputted1, 10));
-			numbers[c] = inputted1;
 		} else {
-			console.log(typeof inputted1);
-			console.log('User input something other than an integer.');
-			return;
+			var po = parseInt(inputted1, 10);
+			if (Number.isInteger(po) == true) {
+				console.log(po);
+				numbers[c] = po;
+			} else {
+				console.log(typeof inputted1);
+				console.log('User input something other than an integer.');
+				return;
+			}
 		}
 		var inputted2 = prompt("What word would you like this to say?", "Fizz");
 		if (inputted2 == null || inputted1 == "") {

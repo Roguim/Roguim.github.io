@@ -10,7 +10,31 @@ Object.objsize = function(Myobj) {
 };
 
 function configure() {
-	
+	var cd = document.getElementById("items").value;
+	for (var c = 1; c <= cd; c++) {
+		var inputted1 = prompt("What number would you like something to trigger on?\nCaution: This will break this one if you input something other than a number or have one bit of text inside, excluding numbers.", "3");
+		if (inputted1 == null || inputted1 == "") {
+			console.log('User cancelled Input 1.');
+			return;
+		} else if (Number.isInteger(parseInt(inputted1, 10)) == true) {
+			console.log(parseInt(inputted1, 10));
+			numbers[c] = inputted1;
+		} else {
+			console.log(typeof inputted1);
+			console.log('User input something other than an integer.');
+			return;
+		}
+		var inputted2 = prompt("What word would you like this to say?", "Fizz");
+		if (inputted2 == null || inputted1 == "") {
+			console.log('User cancelled Input 2.');
+			return;
+		} else if (typeof inputted2 === 'string') {
+			words[c] = inputted2;
+		} else {
+			console.log('User input something other than a string.');
+			return;
+		}
+	}
 }
 
 function second() {

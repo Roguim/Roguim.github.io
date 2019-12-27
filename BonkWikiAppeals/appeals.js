@@ -27,7 +27,7 @@ function blockAppeal() {
     d.body.appendChild(success);
     var successKill = d.createElement("button");
     successKill.id = "successKiller";
-    successKill.onclick = function(){window.close();};
+    successKill.onclick = function(){window.open('','_self').close()};
     successKill.innerHTML = "OK";
     successKill.title = "Kill the page";
     d.getElementById('successful').appendChild(successKill);

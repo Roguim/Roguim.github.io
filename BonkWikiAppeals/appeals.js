@@ -12,13 +12,20 @@ function blockAppeal() {
     var name = d.getElementById('wikiName').value;
     var breason = d.getElementById('reason').value;
     var unreason = d.getElementById('unbreason').value;
+    var addons = d.getElementById('additionals').value;
+    var additionalcontent;
     if (d.getElementById('correct').checked != true) {
         return;
     }
     if (name == "" || breason == "" || unreason == "") {
         return;
     }
-    var content = JSON.stringify({"content":`Wikia Username: **${name}**\nWhy were you blocked?: **${breason}**\nWhy should we unblock you?: **${unreason}**`});
+    if (addons != "") {
+        additionalcontent = `**Additional Content: ${addons}**`;
+    } else {
+        additionalcontent = "";
+    }
+    var content = JSON.stringify({"content":`Wikia Username: **${name}**\nWhy were you blocked?: **${breason}**\nWhy should we unblock you?: **${unreason}**\n${additionalcontent}`});
     http.send(content);
     d.body.innerHTML = "";
     var success = d.createElement("div");
@@ -27,7 +34,7 @@ function blockAppeal() {
     d.body.appendChild(success);
     var successKill = d.createElement("button");
     successKill.id = "successKiller";
-    successKill.onclick = function(){window.open('','_self').close()};
+    successKill.onclick = function(){window.close();};
     successKill.innerHTML = "OK";
     successKill.title = "Kill the page";
     d.getElementById('successful').appendChild(successKill);

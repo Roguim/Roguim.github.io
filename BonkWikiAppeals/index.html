@@ -9,15 +9,23 @@
     <script src="appeals.js"></script>
 </head>
 <body>
-    <h1>Bonk.io Wiki Appeals</h1>
-    <label for="wikiName">What's your wikia username?</label>
-    <input type="text" id="wikiName" placeholder="Username" maxlength="50"><br>
-    <label for="reason">Why were you blocked?</label>
-    <input type="text" id="reason" placeholder="Block reason"><br>
-    <label for="unbreason">Why should we unblock you?</label>
-    <input type="text" id="unbreason" placeholder="Unblock reason"><br>
-    <label for="correct">I certify that this information is correct</label>
-    <input type="checkbox" id="correct"><br>
-    <button onclick="blockAppeal()">Submit your appeal</button>
+    <div id="contents">
+
+    
+        <h1>Bonk.io Wiki Appeals</h1>
+        <label for="wikiName" class="req">What's your wikia username?</label><br>
+        <input type="text" id="wikiName" placeholder="Username" maxlength="50"><br>
+        <label for="reason" class="req">Why were you blocked?</label><br>
+        <input type="text" id="reason" placeholder="Block reason"><br>
+        <label for="unbreason" class="req">Why should we unblock you?</label><br>
+        <input type="text" id="unbreason" placeholder="Unblock reason"><br>
+        <label for="additionals">Please provide any additional information, that would help appeal the block. E.g. Discord Tag for further contact/Email</label><br>
+        <input type="text" id="additionals" placeholder="Additional Information"><br>
+        <label for="correct" class="req">I certify that this information is correct</label><br>
+        <input type="checkbox" id="correct"><br>
+        <button onclick="blockAppeal()">Submit your appeal</button>
+
+
+    </div>
 </body>
 </html>

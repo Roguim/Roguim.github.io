@@ -42,3 +42,18 @@ body {
     left: 26%;
     position: absolute;
 }
+#contents {
+    width: 35%;
+}
+input {
+    left: 1rem;
+    position: relative;
+    margin-bottom: 3rem;
+}
+#correct {
+    margin-bottom: 0rem;
+}
+.req:after {
+    content: "*";
+    color: red;
+}

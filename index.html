@@ -1,36 +1,51 @@
-<<<<<<< HEAD
----
-title: 'Hub'
-description: 'The main hub of me.'
-link: 'https://roguim.github.io/index.html'
-styles: 'styles.css'
----
-=======
 <!DOCTYPE html>
 <head>
 	<title>My Website</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="index.css">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<!--<script src="seconds.js"></script>-->
+	
 </head>
 <body id="bod">
->>>>>>> parent of 884293c... Major revamp to use a new backend.
-    <div> <!-- BACKGROUND -->
-	<img src="logo.jpg" alt="logo" class="circle" id="backgroundlogo"></img>
-	<img src="hype.png" alt="hypelogo" class="circle" id="hypesquadlogo"></img>
-	</div>
+	
+
+	<!-- INFORMATION SECTION -->
+
 	<div class="round18" id="backrect">
 	</div>
 	<div id="inforect">
-	<p id="infotext">Hi, I'm Rogue. I am a student from Australia. I have been programming a few things and this is just the website I host them on.</p>
+		<p id="infotext">Hi, I'm otorhinolaryngologically. I am a student from Australia. I have been programming a few things and this is just the website I host them on.</p>
 	</div>
-	<a href="http://roguim.github.io/second.html"><button class="circle" id="seclink">Second Counter</button></a>
-	<a href="https://roguim.github.io/bottlegame.html"><button class="circle" id="bottlelink">Bottle Game</button></a>
-	<a href="https://roguim.github.io/beta/"><button class="circle" id="betalink">BETA-Incomplete</button></a>
-	<a class="twitter-timeline" data-width="300" data-height="600" data-theme="dark" data-link-color="#E81C4F" href="https://twitter.com/realjoeythou?ref_src=twsrc%5Etfw">Tweets by realjoeythou</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+	<!-- LINKS SECTION -->
+
+	<a href="http://roguim.github.io/second.html">
+		<button class="circle" id="seclink">Second Counter</button>
+	</a>
+
+	<a href="https://roguim.github.io/oldbottlegame.html">
+		<button class="circle" id="bottlelink">Bottle Game</button>
+	</a>
+
+	<!-- BACKGROUND ANIMATION LUL -->
+	<div id="bubbles" preserveAspectRatio="none">&nbsp;</div>
+
+	<!-- FOOTER -->
+
 	<div id="foot">
-		<center><p>Made by Rogue.</p></center>
-		<p id="footlinktxt"><span class="footlinks"><a href="https://www.youtube.com/channel/UCJozVwOZR0WgiocR_XxFmxg">YouTube</a></span>
-		<br><span class="footlinks"><a href="https://twitter.com/realjoeythou">Twitter</a></span></p>
+		<p id="footlinktxt">
+			•
+			<span class="footlinks"><a href="https://www.youtube.com/channel/UCJozVwOZR0WgiocR_XxFmxg">YouTube</a></span>
+			•
+			<span class="footlinks"><a href="https://twitter.com/rhinolary">Twitter</a></span>
+			•
+			<span class="footlinks"><a href="https://twitch.tv/otorhinolaryngologically">Twitch</a></span>
+			•
+			<span class="footlinks"><a href="https://discord.gg/yaTpJYB">Discord</a></span>
+			•
+		</p>
 	</div>
+	<!-- LOAD DARK/LIGHT THEME STUFF -->
+	<script src="theme.js"></script>
+	<img src="themechange.png" alt="Click this to change themes" onclick="themeChange()" id="ChangeThemes">
 </body>

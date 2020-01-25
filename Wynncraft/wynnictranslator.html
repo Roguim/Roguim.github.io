@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wynnic Translator</title>
+    <link rel="stylesheet" href="wynnictranslator.css">
+    
+</head>
+<body>
+    <div id="io">
+        <textarea type="text" id="in" placeholder="Stuff goes in here,"></textarea>
+        <textarea type="text" id="out" placeholder="and comes out here!" onclick="copythat()"></textarea>
+        <textarea type="text" id="outVisual" placeholder="and comes out here!" class="invisible"></textarea>
+        <button onclick="convo()" id="convertbutton">Convert!</button>
+    </div>
+    <div id="ticker">
+        
+    </div>
+    <div id="keyboard"></div>
+
+    <script src="wynnictranslator.js"></script>
+    <footer><p>Made by Yeetnt/@rhinolary (Forums) • Majority of the Wynnic Font from <a href="https://www.reddit.com/user/kingerikthesecond/">/u/kingerikthesecond's</a> <a href="https://www.reddit.com/r/WynnCraft/comments/ecywl3/i_made_a_working_wynnic_font_otf_what_do_you/">Reddit Post</a> (I made 10,50, and 100)</p></footer>
+    <!-- LOAD DARK/LIGHT THEME STUFF -->
+    <script src="https://roguim.github.io/theme.js"></script>
+	<img src="https://roguim.github.io/themechange.png" alt="Click this to change themes" onclick="themeChange()" id="ChangeThemes" title="Change themes">
+</body>
+</html>

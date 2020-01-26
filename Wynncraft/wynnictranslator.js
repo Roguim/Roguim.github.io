@@ -80,8 +80,13 @@ function convo() {
             }
         } else{ /* OUTPUT AS IS */
             var char = alphabetkey.indexOf(inputbox.value[i].toLowerCase());
-            document.getElementById('out').value += alphabet[char];
-            document.getElementById('outVisual').value += alphabetkey[char];
+            if (char == -1) {
+                document.getElementById('out').value += document.getElementById('in').value[i];
+            } else {
+                document.getElementById('out').value += alphabet[char];
+                document.getElementById('outVisual').value += alphabetkey[char];
+            }
+            
         }
     }
 }

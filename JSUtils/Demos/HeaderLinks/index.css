@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+    color: white;
+}
+header {
+    background-color: green;
+    width: 100%;
+    height: 5vh;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+header a {
+    position: relative;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    top: 1vh;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.H1 {
+    font-size: 1rem;
+}
+.H2 {
+    font-size: .95rem;
+}
+.H3 {
+    font-size: .90rem;
+}
+.H4 {
+    font-size: .85rem;
+}
+.H5 {
+    font-size: .80rem;
+}
+.H6 {
+    font-size: .75rem;
+}

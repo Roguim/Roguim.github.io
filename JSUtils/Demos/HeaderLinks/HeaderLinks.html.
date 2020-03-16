@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Header Links Demo</title>
+        <link rel="stylesheet" href="index.css">
+        <!-- Headers To Links -->
+        <script src="HeaderLinks.js" defer></script>
+    </head>
+    <body>
+        <header>
+            &nbsp;
+        </header>
+        <h1 id="heading">Preserves element ids</h1>
+            <p>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sequi possimus ex numquam magni praesentium ea error. Cum facere consequuntur, laborum necessitatibus accusantium, eum doloremque adipisci assumenda debitis expedita numquam.</span>
+                <span>Amet delectus placeat perspiciatis atque ea, omnis maxime! Exercitationem velit laudantium sint. Delectus, eligendi. Facere accusantium omnis accusamus unde ducimus, iusto obcaecati itaque! Ipsa libero iure facilis, est quisquam amet.</span>
+                <span>Maxime iure repudiandae ullam aut neque eaque quos eius tenetur ipsam maiores? Ipsa impedit aperiam tempore. Suscipit nesciunt vero ipsa saepe, et, explicabo ut, sint aspernatur eaque cum dolor nam!</span>
+                <span>Ipsum exercitationem natus repellendus nulla voluptate odit explicabo, perspiciatis esse aliquam fuga sit numquam assumenda qui consectetur? Dolorum provident facere officiis quam itaque! Maiores atque, consequatur quos voluptatibus deserunt eligendi.</span>
+                <span>Laborum nisi veritatis amet, alias nulla atque nihil doloremque architecto. Praesentium magni quas, at in vel, tempore nisi non dolor fugit quo fugiat asperiores corporis consectetur similique, dolore reprehenderit rerum?</span>
+                <span>Cum, tenetur perferendis nam assumenda neque dicta. Dicta architecto voluptatum aperiam assumenda incidunt quidem minus voluptas beatae sit, quo laborum asperiores iusto odio cupiditate fugit aut omnis at quam impedit?</span>
+                <span>Consectetur totam laudantium sunt itaque adipisci laborum labore, ullam error ab blanditiis reprehenderit laboriosam necessitatibus fugiat architecto cumque, aperiam maxime unde magnam officia non veritatis assumenda delectus dolor. Culpa, sapiente.</span>
+                <span>Explicabo ipsum aperiam asperiores accusamus cum magnam voluptatem vitae illum provident, sed quasi perspiciatis dolor exercitationem quas tempora nam ratione minus commodi nulla voluptas eaque impedit ea. Harum, minus minima.</span>
+                <span>Libero dolorum atque fuga aspernatur magni, deleniti, velit consequatur laboriosam impedit numquam, consequuntur nisi possimus veniam soluta ratione obcaecati ipsum adipisci! Ipsa, eum. Quibusdam tenetur quidem vel, qui sequi repellat.</span>
+                <span>Eos quod dolores voluptas asperiores, quam fugit, atque placeat exercitationem esse, eum error possimus quas. Ducimus, architecto quos excepturi reprehenderit repellat eligendi voluptatum animi sed enim tempore ipsam recusandae quisquam.</span>
+                <span>Nulla perferendis sed facilis est, eligendi consequatur odit sunt fuga alias, harum natus corporis provident incidunt et voluptatum illo impedit culpa cum vero tempore consequuntur temporibus tempora quam. Doloremque, ratione.</span>
+                <span>Ea magnam est quasi dolores fugiat. Fuga ullam adipisci blanditiis porro non iure, molestiae quibusdam iste ab culpa earum odio laudantium cum placeat consequuntur beatae. Ullam voluptatem porro assumenda recusandae.</span>
+                <span>Ad molestias perspiciatis fuga repellendus exercitationem nam enim sed magni aut a. Culpa asperiores sit quidem porro expedita vitae voluptas officiis exercitationem eos. Necessitatibus suscipit sequi rem, doloremque nobis eligendi!</span>
+                <span>Illo consectetur ipsam, ratione suscipit ipsum quaerat eaque vel eius quisquam nisi neque debitis dolor laboriosam. Velit tenetur, quod iure, quaerat dicta provident libero magnam expedita, unde possimus quo voluptates.</span>
+                <span>Rerum tempora fugiat modi reiciendis ipsam quo delectus laborum asperiores, non cumque tempore sit ipsa neque nulla quod qui. Ad, asperiores provident odit aut corporis optio fugit consequuntur laboriosam error.</span>
+                <span>Temporibus quaerat voluptates, quidem debitis consectetur, magnam, repellendus nemo alias sunt aliquam itaque magni. Velit eum, est sapiente, deserunt dolorum exercitationem quos illo hic at quasi nihil quia delectus totam.</span>
+                <span>Ratione at et corporis eius sequi laboriosam saepe? Delectus suscipit consequuntur ab sunt quos quia, sed ipsum labore, cum, eveniet officiis dolores quaerat voluptate dolore est. Aliquid molestiae odio obcaecati?</span>
+                <span>Laboriosam earum modi sed, tempora amet odio doloremque ratione? Ipsum, sint nam debitis temporibus aspernatur omnis earum. Commodi magnam necessitatibus excepturi beatae modi, possimus recusandae reprehenderit iure ipsam sint harum!</span>
+                <span>Quia laboriosam molestiae debitis odio, commodi, natus provident beatae ratione tenetur sapiente blanditiis? Vel quam totam, rerum et excepturi expedita accusamus atque veniam reiciendis aspernatur sint magni, aliquam, porro cumque.</span>
+                <span>Corporis excepturi libero soluta atque provident impedit inventore recusandae asperiores, error itaque beatae? Voluptatibus cum, animi reiciendis dolorum temporibus minus natus repudiandae debitis quibusdam placeat aliquam ratione exercitationem officiis facere.</span>
+            </p>
+            <h2>Sub-Header</h2>
+            <p>
+                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto dolore ipsam possimus quaerat magni rem unde cumque, modi deleniti, quo, voluptatum saepe voluptates non vitae nesciunt placeat eius fugit iure!</span>
+                <span>Illum consequatur voluptates delectus facere laudantium sunt doloribus ipsum vel reprehenderit dolorum voluptas eos in exercitationem illo quaerat, voluptatem minus eaque accusantium necessitatibus accusamus? Modi, repellendus architecto. Dolore, laudantium accusamus!</span>
+                <span>Ipsum laudantium soluta omnis corporis expedita fugit eum deleniti delectus id ducimus? Nisi rerum ad doloribus modi, porro blanditiis sapiente architecto amet saepe iure molestiae commodi voluptatem explicabo consectetur eaque.</span>
+                <span>Mollitia asperiores aliquam nobis maiores voluptatem voluptatum perferendis veritatis laudantium? Odio, consectetur atque? Soluta quod repellendus nisi, ducimus in nobis distinctio aperiam, sit, magnam nemo iusto tenetur ipsa obcaecati at.</span>
+                <span>Non iure quos mollitia saepe sunt deleniti placeat adipisci vero quaerat quas ea necessitatibus, dolores consequuntur vel, veritatis optio neque officia quo facilis explicabo excepturi eos, tempora repellendus cumque? Eos!</span>
+            </p>
+                <h3>Sub-Sub-Header</h3>
+                <p>
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto dolore ipsam possimus quaerat magni rem unde cumque, modi deleniti, quo, voluptatum saepe voluptates non vitae nesciunt placeat eius fugit iure!</span>
+                    <span>Illum consequatur voluptates delectus facere laudantium sunt doloribus ipsum vel reprehenderit dolorum voluptas eos in exercitationem illo quaerat, voluptatem minus eaque accusantium necessitatibus accusamus? Modi, repellendus architecto. Dolore, laudantium accusamus!</span>
+                    <span>Ipsum laudantium soluta omnis corporis expedita fugit eum deleniti delectus id ducimus? Nisi rerum ad doloribus modi, porro blanditiis sapiente architecto amet saepe iure molestiae commodi voluptatem explicabo consectetur eaque.</span>
+                    <span>Mollitia asperiores aliquam nobis maiores voluptatem voluptatum perferendis veritatis laudantium? Odio, consectetur atque? Soluta quod repellendus nisi, ducimus in nobis distinctio aperiam, sit, magnam nemo iusto tenetur ipsa obcaecati at.</span>
+                    <span>Non iure quos mollitia saepe sunt deleniti placeat adipisci vero quaerat quas ea necessitatibus, dolores consequuntur vel, veritatis optio neque officia quo facilis explicabo excepturi eos, tempora repellendus cumque? Eos!</span>
+                </p>
+        <h1 class="invisible">Won't show in header</h1>
+        <p>
+            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto dolore ipsam possimus quaerat magni rem unde cumque, modi deleniti, quo, voluptatum saepe voluptates non vitae nesciunt placeat eius fugit iure!</span>
+            <span>Illum consequatur voluptates delectus facere laudantium sunt doloribus ipsum vel reprehenderit dolorum voluptas eos in exercitationem illo quaerat, voluptatem minus eaque accusantium necessitatibus accusamus? Modi, repellendus architecto. Dolore, laudantium accusamus!</span>
+            <span>Ipsum laudantium soluta omnis corporis expedita fugit eum deleniti delectus id ducimus? Nisi rerum ad doloribus modi, porro blanditiis sapiente architecto amet saepe iure molestiae commodi voluptatem explicabo consectetur eaque.</span>
+            <span>Mollitia asperiores aliquam nobis maiores voluptatem voluptatum perferendis veritatis laudantium? Odio, consectetur atque? Soluta quod repellendus nisi, ducimus in nobis distinctio aperiam, sit, magnam nemo iusto tenetur ipsa obcaecati at.</span>
+            <span>Non iure quos mollitia saepe sunt deleniti placeat adipisci vero quaerat quas ea necessitatibus, dolores consequuntur vel, veritatis optio neque officia quo facilis explicabo excepturi eos, tempora repellendus cumque? Eos!</span>
+        </p>
+        <h1>Second Major Header</h1>
+            <h2>Sub-Major</h2>
+                <h3>Sub-Sub-Major</h3>
+                    <h4>Sub-Sub-Sub-Major</h4>
+                        <h5>even smaller</h5>
+                            <h6>wow so small</h6>
+    </body>
+</html>

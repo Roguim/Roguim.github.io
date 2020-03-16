@@ -1,3 +1,8 @@
+//
+//
+// HEADER LINKS by otorhinolaryngologically/Roguim. Demo available at https://roguim.github.io/JSUtils/Demos/HeaderLinks/index.html
+//
+//
 var headernumber = 0;
 function MakeHeader(element) {
     if (element.classList.contains('invisible')) {

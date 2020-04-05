@@ -1,5 +1,5 @@
-user-agent: *
+user-agent: Adsbot-Google
 disallow: *
 
-user-agent: Adsbot-Google
+user-agent: Mediapartners-Google
 disallow: *

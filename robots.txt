@@ -1,0 +1,5 @@
+user-agent: *
+disallow: *
+
+user-agent: Adsbot-Google
+disallow: *

@@ -1,0 +1,3 @@
+Contact: mailto:rogueyt.business@gmail.com
+Preferred-Languages: en
+Canonical: https://roguim.github.io/.well-known/security.txt

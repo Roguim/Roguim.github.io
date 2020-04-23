@@ -1,0 +1,409 @@
+.light-theme {
+	--bgCol: #FFF;
+	--bgCol2: rgb(189, 189, 189);
+	--bgCol3: rgb(158, 158, 158);
+	--bgCol4: rgb(131, 131, 131);
+	--linkCol: #8D172B;
+	--text: #0A0A0A;
+}
+.dark-theme {
+	--bgCol: #000;
+	--bgCol2: rgb(43, 43, 43);
+	--bgCol3: rgb(100, 100, 100);
+	--bgCol4: rgb(131, 131, 131);
+	--linkCol: #168C79;
+	--text: #D7D7D7;
+}
+:root {
+	--bgWidth: 156vmin;
+	--bgHeight: 80vmin;
+	--large: 14.96pt;
+	--medium: 14pt;
+	--small: 11pt;
+	--abilityHead: 24pt;
+	--Subcolor: #E5E702;
+}
+.day {
+	--color: #fb9503;
+}
+.passive {
+	--color: #98d4ff;
+}
+.night {
+	--color: #784fc1;
+}
+.BD {
+	--color: #4582b4;
+}
+.Cult {
+	--color: #8b0000;
+}
+.Unseen {
+	--color: #a500a5;
+}
+.Neutral {
+	--color: #5f5f5f;
+}
+body {
+	background-color: var(--bgCol);
+	overflow: hidden;
+	color: white;
+	font-family: overlock;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+	user-select: none;
+}
+.offensive {
+	--left: 1.1vmin;
+}
+.killer {
+	--left: 1.1vmin;
+}
+.special {
+	--left: 0.1vmin;
+}
+.support {
+	--left: 0vmin;
+}
+.social {
+	--left: 0vmin;
+}
+.investigative {
+	--left: 0.1vmin;
+}
+
+
+
+
+ /* LEFT */
+#border {
+	pointer-events: none;
+	z-index: 5;
+	position: absolute;
+}
+#classimage {
+	position: absolute;
+	width: 32vmin;
+	height: 31vmin;
+	left: 0vmin;
+	z-index: 4;
+	background-color: #060d0d;
+	border-radius: 36px;
+}
+#icons {
+	z-index: 8;
+	position: absolute;
+	left: 2vmin;
+	top: 2vmin;
+}
+#icons img {
+	padding-top: 0.3vmin;
+	padding-bottom: 0.3vmin;
+}
+#borderSm {
+	z-index: 7;
+	position: absolute;
+	width: 12vmin;
+	left: 20vmin;
+	top: 20vmin;
+}
+#win,#win2 {
+	font-size: var(--small);
+	position: absolute;
+	top: 30vmin;
+}
+#unique, #occupy, #convert, #death, #win, #win2, #moreDesc, #ability1, #ability2, #ability3, #ability4, #ability5, #ability6 {
+	display: none;
+}
+#unique.shown, #occupy.shown, #convert.shown, #death.shown, #win.shown, #win2.shown, #moreDesc.shown, #ability1.shown, #ability2.shown, #ability3.shown, #ability4.shown, #ability5.shown, #ability6.shown  {
+	display: block;
+}
+#moreDesc {
+	position: absolute;
+	top: 16vmin;
+	height: 10vmin;
+	font-size: var(--small);
+	overflow: hidden;
+}
+/*#additionaldesc, #adddesclabel {
+	display: none;
+
+}*/
+.shown {
+	display: block;
+}
+#classimageSm {
+	position: absolute;
+	width: 12vmin;
+	height: 11.8vmin;
+	left: 20vmin;
+	z-index: 6;
+	background-color: #060d0d;
+	border-radius: 12px;
+	top: 20vmin;
+}
+#smallportrait {
+	display: none;
+}
+#smallportrait.shown {
+	display: block;
+}
+#options {
+	position: absolute;
+	bottom: 2vmin;
+	color: var(--text);
+	font-weight: bold;
+}
+#options2 {
+	position: absolute;
+	bottom: 2vmin;
+	right: 130vmin;
+	color: var(--text);
+	font-weight: bold;
+}
+#description {
+	position: absolute;
+	left: 5vmin;
+	width: 44vmin;
+	top: 39vmin;
+}
+#ability {
+	font-size: 13pt;
+}
+#descfaction, #descfaction2 {
+	color: var(--color);
+	font-size: var(--large);
+}
+#descfaction3, #descfaction4 {
+	color: var(--color);
+}
+
+#factiontype {
+	font-size: var(--medium);
+}
+
+#classname {
+	font-family: overlock;
+	font-weight: bold;
+	font-size: 1.53rem;
+	color: white;
+	position: absolute;
+	top: -1.9vmin;
+	left: 4.6vmin;
+	width: 20vw;
+}
+
+#edit {
+	background-color: var(--bgCol2);
+	display: none;
+	width: 40vw;
+	height: 40vh;
+	z-index: 10;
+	position: absolute;
+	left: 30vw;
+	top: 30vh;
+	color: var(--text);
+	font-family: overlock;
+	font-size: 2rem;
+}
+#edit span {
+	position: absolute;
+	right: 1vw;
+}
+#backer {
+	background-color: #00000088;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	top: 0px;
+	left: 0px;
+	z-index: 9;
+	display: none;
+}
+#additionalInfo {
+	position: absolute;
+	left: 38vmin;
+	top: 15vmin;
+}
+
+#types {
+	position: absolute;
+	top: 14.5vmin;
+	left: var(--left);
+}
+
+#portraits {
+	position: absolute;
+	left: 3vmin;
+	top: 7vmin;
+}
+
+
+
+#edit.shown, #backer.shown {
+	display: block;
+}
+#edit input {
+	position: absolute;
+}
+
+@media screen and (min-width: 765px) {
+	#ChangeThemes {
+		top: 0.2vh;
+		right: 0.2vw
+	}
+}
+@media screen and (max-width: 764px) {
+	#ChangeThemes {
+		bottom: 0.2vh;
+		right: 0.2vw
+	}
+}
+
+#level0 {
+	position: absolute;
+	left: 1vmin;
+	top: 1vmin;
+	width: var(--bgWidth);
+	height: var(--bgHeight);
+}
+#bgmain {
+	width: var(--bgWidth);
+	height: var(--bgHeight);
+}
+
+
+#ChangeThemes { 
+	width: 5rem;
+	height: 5rem;
+	position: absolute;
+}
+
+@font-face {
+	font-family: 'overlock';
+	src: url(/assets/fonts/Font\ \(Overlock\)OVERLOCK-REGULAR.TTF);
+}
+@font-face {
+	font-family: 'overlockblack';
+	src: url(/assets/fonts/Font\ \(Overlock\)OVERLOCK-BLACk.TTF);
+}
+
+
+
+
+
+
+
+
+/* RIGHT */
+#right {
+	position: absolute;
+	left: 51.5vmin;
+	top: 13.5vmin;
+	width: 100vmin;
+	height: 66.2vmin;
+	overflow: hidden;
+}
+.abilityHead {
+	position: absolute;
+	font-size: var(--abilityHead);
+	color: var(--color);
+	top: -5.3vmin;
+	left: 7vmin;
+	width: 100vmin;
+}
+#ability1, #ability3, #ability5 {
+	position: absolute;
+	top: 0vmin;
+	left: 0vmin;
+	width: 50vmin;
+}
+#ability2, #ability4, #ability6 {
+	position: absolute;
+	top: 0vmin;
+	left: 50vmin;
+}
+#passives {
+	position: absolute;
+	top: 0vmin;
+	width: 100vmin;
+}
+#day {
+	position: absolute;
+	top: 24vmin;
+	width: 100vmin;
+}
+#night {
+	position: absolute;
+	top: 47.5vmin;
+	width: 100vmin;
+}
+.abilCon {
+	height: 16.4vmin;
+	overflow: hidden;
+}
+.abilityIcon {
+	padding: 0px;
+	margin: 0px;
+	position: absolute;
+}
+.abilitydesc {
+	position: absolute;
+	top: 4vmin;
+	width: 49.6vmin;
+	left: 1vmin;
+	font-size: 15px;
+}
+
+#disclaimer {
+	position: absolute;
+	bottom: 0vmin; 
+	right: 0vmin;
+	color: var(--bgCol4);
+	text-align: right;
+}
+.usage {
+	font-size: 20pt;
+	font-weight: bold;
+	position: absolute;
+	font-family:overlock;
+	top: -3.9vmin;
+	left: 3.9vmin;
+}
+#save {
+	position: absolute;
+	left: 100vmin;
+	top: 85vmin;
+}
+#errorBox {
+	position: absolute;
+	z-index: 100;
+	background-color: var(--bgCol2);
+	color: var(--text);
+	width: 50vmin;
+	height: 50vmin;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+#errorBox p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.highlight {
+	color: #fb9503;
+	transition: color 0.375s;
+}
+.sub {
+	position: absolute;
+	left: 7vmin;
+	width: 50vmin;
+	color: var(--Subcolor);
+	top: 1.4vmin;
+}

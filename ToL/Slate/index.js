@@ -392,7 +392,7 @@ function exp() {
     else output = `${document.URL}?class=${output}`;
     var errorBox = document.createElement('div');
     errorBox.id = "errorBox";
-    errorBox.innerHTML = `<p id="urlinfo" class="noselect">URL to this class: </p><p>${output}</p><br>`
+    errorBox.innerHTML = `<p id="urlinfo" class="noselect">CTRL+A CTRL+C to copy this quickly!<br>URL to this class: </p><p>${output}</p><br>`
     document.getElementById('errorContainer').append(errorBox);
     /*var copybutton = document.createElement('button');
     copybutton.innerHTML = "Copy URL";

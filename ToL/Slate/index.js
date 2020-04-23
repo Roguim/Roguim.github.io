@@ -27,7 +27,7 @@ for (i = 0; i < allowedElems.length; i++) {
 }
 
 var importkey = document.URL.indexOf('?class=');
-if (document.URL.slice(importkey+7).length >= 1) imp(document.URL.slice(importkey+7));
+if (importkey >= 0) imp(document.URL.slice(importkey+7));
 
 document.getElementById('backer').addEventListener('click', rem);
 document.getElementById('close').addEventListener('click', rem);

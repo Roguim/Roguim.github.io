@@ -385,8 +385,33 @@ function exp() {
         output = output.replace(regex, Object.values(finalSanitizers)[i]);
     }
     console.log(output);
+    if (document.getElementById('errorBox')) {
+        document.getElementById('errorBox').parentNode.removeChild(document.getElementById('errorBox'));
+    }
+    if (document.URL.indexOf('?class=') >= 0) output = `${document.URL.slice(0,document.URL.indexOf('?class=')+7)}${output}`;
+    else output = `${document.URL}?class=${output}`;
+    var errorBox = document.createElement('div');
+    errorBox.id = "errorBox";
+    errorBox.innerHTML = `<p id="urlinfo" class="noselect">URL to this class: </p><p>${output}</p><br>`
+    document.getElementById('errorContainer').append(errorBox);
+    /*var copybutton = document.createElement('button');
+    copybutton.innerHTML = "Copy URL";
+    copybutton.id = "copybutton";
+    copybutton.classList.add('noselect');
+    document.getElementById('errorBox').append(copybutton);
+    document.getElementById('copybutton').addEventListener('click', errorBoxCopy);*/
+    document.getElementById('backer').classList.add('shown');
+    setTimeout(function() {
+        document.getElementById('errorBox').parentNode.removeChild(document.getElementById('errorBox'));
+        document.getElementById('backer').classList.remove('shown');
+    }, 5000);
 }
-
+function errorBoxCopy() {
+    var copyText = document.getElementById("errorBox").children[0];
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+}
 function err(message, highlight) {
     if (document.getElementById('errorBox')) {
         document.getElementById('errorBox').parentNode.removeChild(document.getElementById('errorBox'));

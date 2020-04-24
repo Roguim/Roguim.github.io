@@ -1,1 +1,1 @@
-[https://trello.com/b/CAukYqeB/tol-class-card-slate](Trello)
+[Project Trello Link](https://trello.com/b/CAukYqeB/tol-class-card-slate)

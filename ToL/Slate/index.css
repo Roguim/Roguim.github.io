@@ -17,10 +17,12 @@
 :root {
 	--bgWidth: 156vmin;
 	--bgHeight: 80vmin;
-	--large: 14.96pt;
-	--medium: 14pt;
-	--small: 11pt;
-	--abilityHead: 24pt;
+	--larger: 3.7vmin;
+	--large: 2.75vmin;
+	--medium: 2.5vmin;
+	--small: 2.25vmin;
+	--tiny: 2.2vmin;
+	--abilityHead: 4.4vmin;
 	--Subcolor: #E5E702;
 }
 .day {
@@ -57,22 +59,28 @@ body {
 	user-select: none;
 }
 .offensive {
-	--left: 1.1vmin;
+	--left: 1vmin;
+	--width: 5.5vmin;
 }
 .killer {
 	--left: 1.1vmin;
 }
 .special {
 	--left: 0.1vmin;
+	--width: 7.3vmin;
 }
 .support {
 	--left: 0vmin;
+	--width: 7.3vmin;
 }
 .social {
 	--left: 0vmin;
+	--width: 7.3vmin;
+
 }
 .investigative {
 	--left: 0.1vmin;
+	--width: 7.3vmin;
 }
 
 
@@ -83,6 +91,8 @@ body {
 	pointer-events: none;
 	z-index: 5;
 	position: absolute;
+	width: 32vmin;
+	height:32vmin;
 }
 #classimage {
 	position: absolute;
@@ -159,10 +169,12 @@ body {
 }
 #options2 {
 	position: absolute;
-	bottom: 2vmin;
-	right: 130vmin;
+	top: 80vmin;
+	left: 40vmin;
 	color: var(--text);
 	font-weight: bold;
+	height: 16vmin;
+	overflow: visible;
 }
 #description {
 	position: absolute;
@@ -171,7 +183,7 @@ body {
 	top: 39vmin;
 }
 #ability {
-	font-size: 13pt;
+	font-size: var(--medium);
 }
 #descfaction, #descfaction2 {
 	color: var(--color);
@@ -184,14 +196,18 @@ body {
 #factiontype {
 	font-size: var(--medium);
 }
+#faction {
+	width: 8vmin;
+}
+
 
 #classname {
 	font-family: overlock;
 	font-weight: bold;
-	font-size: 1.53rem;
+	font-size: var(--larger);
 	color: white;
 	position: absolute;
-	top: -1.9vmin;
+	top: -2.4vmin;
 	left: 4.6vmin;
 	width: 20vw;
 }
@@ -232,6 +248,7 @@ body {
 #types {
 	position: absolute;
 	top: 14.5vmin;
+	width: var(--width);
 	left: var(--left);
 }
 
@@ -348,6 +365,7 @@ body {
 .abilityIcon {
 	padding: 0px;
 	margin: 0px;
+	width: 7vmin;
 	position: absolute;
 }
 .abilitydesc {
@@ -355,7 +373,7 @@ body {
 	top: 4vmin;
 	width: 49.6vmin;
 	left: 1vmin;
-	font-size: 15px;
+	font-size: var(--tiny);
 }
 
 #disclaimer {
@@ -364,9 +382,10 @@ body {
 	right: 0vmin;
 	color: var(--bgCol4);
 	text-align: right;
+	font-size: var(--medium);
 }
 .usage {
-	font-size: 20pt;
+	font-size: var(--larger);
 	font-weight: bold;
 	position: absolute;
 	font-family:overlock;
@@ -377,6 +396,8 @@ body {
 	position: absolute;
 	left: 100vmin;
 	top: 85vmin;
+	font-size: var(--tiny);
+	width: 9vmin;
 }
 #errorBox {
 	position: absolute;
@@ -422,4 +443,16 @@ p#urlinfo {
 	width: 50vmin;
 	color: var(--Subcolor);
 	top: 1.4vmin;
+	font-size: var(--medium);
+}
+label {
+	font-size: var(--small);
+	position: relative;
+	top: -0.25vmin;
+}
+input[type=checkbox] {
+	padding: 0px;
+}
+p {
+	font-size: var(--larger);
 }

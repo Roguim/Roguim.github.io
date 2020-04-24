@@ -50,7 +50,7 @@ body {
 	background-color: var(--bgCol);
 	overflow: hidden;
 	color: white;
-	font-family: 'Overlock', cursive;
+	font-family: 'Overlock';
 	-webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -202,7 +202,7 @@ body {
 
 
 #classname {
-	font-family: 'Overlock', cursive;
+	font-family: 'Overlock';
 	font-weight: bold;
 	font-size: var(--larger);
 	color: white;
@@ -222,7 +222,7 @@ body {
 	left: 30vw;
 	top: 30vh;
 	color: var(--text);
-	font-family: 'Overlock', cursive;
+	font-family: 'Overlock';
 	font-size: 2rem;
 }
 #edit span {
@@ -452,7 +452,7 @@ p {
 
 @import url('https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 /* @font-face {
-	font-family: 'Overlock', cursive;
+	font-family: 'overlock';
 	src: url(/assets/fonts/Font\ \(Overlock\)/OVERLOCK-REGULAR.TTF);
 }
 @font-face {

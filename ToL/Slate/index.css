@@ -50,7 +50,7 @@ body {
 	background-color: var(--bgCol);
 	overflow: hidden;
 	color: white;
-	font-family: 'Overlock';
+	font-family: 'Overlock', cursive;
 	-webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -82,7 +82,14 @@ body {
 	--left: 0.1vmin;
 	--width: 7.3vmin;
 }
-
+.defense {
+	--left: 0vmin;
+	--width: 7.3vmin;
+}
+.wildcard {
+	--left: 0vmin;
+	--width: 7.3vmin;
+}
 
 
 
@@ -133,9 +140,9 @@ body {
 }
 #moreDesc {
 	position: absolute;
-	top: 16vmin;
-	height: 10vmin;
-	font-size: var(--small);
+	top: 18.5vmin;
+	height: 8vmin;
+	font-size: var(--tiny);
 	overflow: hidden;
 }
 /*#additionaldesc, #adddesclabel {
@@ -169,7 +176,7 @@ body {
 }
 #options2 {
 	position: absolute;
-	top: 80vmin;
+	top: 81vmin;
 	left: 40vmin;
 	color: var(--text);
 	font-weight: bold;
@@ -202,7 +209,7 @@ body {
 
 
 #classname {
-	font-family: 'Overlock';
+	font-family: 'Overlock', cursive;
 	font-weight: bold;
 	font-size: var(--larger);
 	color: white;
@@ -222,7 +229,7 @@ body {
 	left: 30vw;
 	top: 30vh;
 	color: var(--text);
-	font-family: 'Overlock';
+	font-family: 'Overlock', cursive;
 	font-size: 2rem;
 }
 #edit span {
@@ -352,12 +359,13 @@ body {
 	width: 100vmin;
 }
 .abilCon {
-	height: 16.4vmin;
+	height: 16.9vmin;
 	overflow: hidden;
 }
 .abilityIcon {
 	padding: 0px;
 	margin: 0px;
+	background-image: url("https://roguim.github.io/ToL/Slate/assets/AbilityBacker.png");
 	width: 7vmin;
 	position: absolute;
 }
@@ -433,10 +441,10 @@ p#urlinfo {
 .sub {
 	position: absolute;
 	left: 7vmin;
-	width: 50vmin;
+	width: 45vmin;
 	color: var(--Subcolor);
 	top: 1.4vmin;
-	font-size: var(--medium);
+	font-size: var(--tiny);
 }
 label {
 	font-size: var(--small);
@@ -452,7 +460,7 @@ p {
 
 @import url('https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 /* @font-face {
-	font-family: 'overlock';
+	font-family: 'Overlock', cursive;
 	src: url(/assets/fonts/Font\ \(Overlock\)/OVERLOCK-REGULAR.TTF);
 }
 @font-face {

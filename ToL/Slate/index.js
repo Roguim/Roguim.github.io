@@ -1,9 +1,9 @@
 var spacer = "|"
-var keys = {'b':'BD','c':'Cult','n':'Neutral','u':'Unseen','sp':'Special','so':'Social','su':'Support','of':'Offensive','ki':'Killer','in':'Investigative', 'wi':'Wildcard', 'de':'Defense'};
+var keys = {'b':'BD','c':'Cult','n':'Neutral','u':'Unseen','sp':'Special','so':'Social','su':'Support','of':'Offensive','ki':'Killer','in':'Investigative', 'wi':'Wildcard', 'de':'Defensive'};
 
 var allowedElems = ['img', 'p', 'in', 'drop'];
 var blacklisted = ['bgmain', 'ChangeThemes', 'border', 'factiontype','ability','unique','death','convert','occupy','win','disclaimer'];
-var multi = {'faction':['BD', 'Unseen', 'Cult', 'Neutral'], 'types':['Investigative','Killer','Offensive','Special','Support','Social', 'Defense', 'Wildcard'],'borderSm':['BD','Unseen','Cult','Neutral'], 'dropIn':['ability1','ability2','ability3','ability4','ability5','ability6']};
+var multi = {'faction':['BD', 'Unseen', 'Cult', 'Neutral'], 'types':['Investigative','Killer','Offensive','Special','Support','Social', 'Defensive', 'Wildcard'],'borderSm':['BD','Unseen','Cult','Neutral'], 'dropIn':['ability1','ability2','ability3','ability4','ability5','ability6']};
 var factioncolours = {'BD':'#4582b4', 'Cult':'#8b0000', 'Unseen':'#800080', 'Neutral':'#5f5f5f'}
 var colours = ['descfaction','descfaction2', 'descfaction3', 'descfaction4'];
 var names = ['descfaction', 'descfaction3'];

@@ -175,14 +175,6 @@ function rem() {
             }
             if (id == "types") {
                 console.log(input.value);
-/*                 document.getElementById('types').classList.remove('special');
-                document.getElementById('types').classList.remove('investigative');
-                document.getElementById('types').classList.remove('support');
-                document.getElementById('types').classList.remove('social');
-                document.getElementById('types').classList.remove('offensive');
-                document.getElementById('types').classList.remove('killer');
-                document.getElementById('types').classList.remove('defense');
-                document.getElementById('types').classList.remove('wildcard'); */
                 for (i = 0; i < Object.values('multi')[1]; i++) {
                     document.getElementById('types').classList.remove(Object.values('multi')[1][i]);
                 }
@@ -517,14 +509,6 @@ function imp(key) {
     }
     var value = `${key[6]}${key[7]}`;
     value = keys[value];
-    /* document.getElementById('types').classList.remove('special');
-    document.getElementById('types').classList.remove('investigative');
-    document.getElementById('types').classList.remove('support');
-    document.getElementById('types').classList.remove('social');
-    document.getElementById('types').classList.remove('offensive');
-    document.getElementById('types').classList.remove('killer');
-    document.getElementById('types').classList.remove('defense');
-    document.getElementById('types').classList.remove('wildcard'); */
     for (i = 0; i < Object.values('multi')[1]; i++) {
         document.getElementById('types').classList.remove(Object.values('multi')[1][i]);
     }
@@ -611,7 +595,41 @@ function imp(key) {
     document.getElementById(`ability6`).classList.toggle('active', false);
     document.getElementById(act).classList.add('active');
     var ability = act;
-    const expect = {'moreDesc':'innerHTML','win2':'innerHTML','abilhead1':'innerHTML','abildesc1':'innerHTML','abilsub1':'innerHTML','abilImg1':'innerHTML','abilhead2':'innerHTML','abildesc2':'innerHTML','abilsub2':'innerHTML','abilImg2':'innerHTML', 'abilhead3':'innerHTML','abildesc3':'innerHTML','abilsub3':'innerHTML','abilImg3':'innerHTML','uses3':'innerHTML','abilhead4':'innerHTML','abildesc4':'innerHTML','abilsub4':'innerHTML','abilImg4':'innerHTML','uses4':'innerHTML','abilhead5':'innerHTML','abildesc5':'innerHTML','abilsub5':'innerHTML','abilImg5':'innerHTML','uses5':'innerHTML','abilhead6':'innerHTML','abildesc6':'innerHTML','abilsub6':'innerHTML','abilImg6':'innerHTML','uses6':'innerHTML','classimage':'src','classimageSm':'src','borderSm':'alt'};
+    const expect = {
+        
+    'moreDesc':'innerHTML',
+    'win2':'innerHTML',
+    'abilhead1':'innerHTML',
+    'abildesc1':'innerHTML',
+    'abilsub1':'innerHTML',
+    'abilImg1':'innerHTML',
+    'abilhead2':'innerHTML',
+    'abildesc2':'innerHTML',
+    'abilsub2':'innerHTML',
+    'abilImg2':'innerHTML', 
+    'abilhead3':'innerHTML',
+    'abildesc3':'innerHTML',
+    'abilsub3':'innerHTML',
+    'abilImg3':'innerHTML',
+    'uses3':'innerHTML',
+    'abilhead4':'innerHTML',
+    'abildesc4':'innerHTML',
+    'abilsub4':'innerHTML',
+    'abilImg4':'innerHTML',
+    'uses4':'innerHTML',
+    'abilhead5':'innerHTML',
+    'abildesc5':'innerHTML',
+    'abilsub5':'innerHTML',
+    'abilImg5':'innerHTML',
+    'uses5':'innerHTML',
+    'abilhead6':'innerHTML',
+    'abildesc6':'innerHTML',
+    'abilsub6':'innerHTML',
+    'abilImg6':'innerHTML',
+    'uses6':'innerHTML',
+    'classimage':'src',
+    'classimageSm':'src',
+    'borderSm':'alt'};
     expectcount = 1;
     var moredesc;
     var neut;
@@ -676,14 +694,25 @@ function imp(key) {
     if (key[5] == "n") offset -= 1;
     if (key[4] == "M") offset -= 1;
     for (i = 0; i < expectcount; i++) {
+        var localoffset = 0;
+        if (i >= 2 && i <= 29) {
+            if (i > 25) if(abi6 == 0) localoffset += 5;
+            if (i > 20) if(abi5 == 0) localoffset += 5;
+            if (i > 15) if(abi4 == 0) localoffset += 5;
+            if (i > 10) if(abi3 == 0) localoffset += 5;
+            if (i > 6) if(abi2 == 0) localoffset += 4;
+            if (i > 2) if(abi1 == 0) localoffset += 4;
+        } else {
+
+        }
         start = end+1;
         end = key.indexOf(spacer, start);
         var act = "";
         for (n = start; n < end; n++) {
             act += key[n];
         }
-        var tochange = Object.values(expect)[i+offset];
-        var id =Object.keys(expect)[i+offset];
+        var tochange = Object.values(expect)[i+offset+localoffset];
+        var id =Object.keys(expect)[i+offset+localoffset];
         if (tochange == "innerHTML") document.getElementById(id).innerHTML = act;
         if (tochange == "src") document.getElementById(id).src = act;
         if (tochange == "alt") document.getElementById(id).alt = act;
@@ -788,4 +817,7 @@ function imp(key) {
         output = output.replace(regex, Object.values(finalSanitizers)[i]);
     }
     console.log(output);*/
+}
+function newClass() {
+    window.location.href = document.URL.slice(0,document.URL.indexOf('?class='));
 }

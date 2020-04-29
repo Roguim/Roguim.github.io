@@ -330,7 +330,7 @@ body {
 	color: var(--color);
 	top: -5.3vmin;
 	left: 7vmin;
-	width: 100vmin;
+	width: 42vmin;
 }
 #ability1, #ability3, #ability5 {
 	position: absolute;
@@ -399,6 +399,15 @@ body {
 	top: 85vmin;
 	font-size: var(--tiny);
 	width: 9vmin;
+}
+#new {
+	position: absolute;
+	left: 110vmin;
+	top: 85vmin;
+	font-size: var(--tiny);
+	width: 13vmin;
+	background-color: #F55;
+	border-color: #F55;
 }
 #errorBox {
 	position: absolute;

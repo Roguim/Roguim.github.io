@@ -58,6 +58,15 @@ body {
     -ms-user-select: none;
 	user-select: none;
 }
+::-webkit-scrollbar {
+	width: 1vmin;
+	border-radius: 36px;
+	background-color: #565656;
+}
+::-webkit-scrollbar-thumb {
+  background: #AAA; 
+  border-radius: 20px;
+}
 .offensive {
 	--left: 1vmin;
 	--width: 5.5vmin;
@@ -376,7 +385,7 @@ body {
 	left: 1vmin;
 	font-size: var(--tiny);
 	overflow-y: auto;
-	height: 10.9vmin;
+	height: 10.2vmin;
 }
 
 #disclaimer {

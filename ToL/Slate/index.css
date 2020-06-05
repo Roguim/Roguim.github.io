@@ -381,7 +381,7 @@ body {
 .abilitydesc {
 	position: absolute;
 	top: 4vmin;
-	width: 49.6vmin;
+	width: 49vmin;
 	left: 1vmin;
 	font-size: var(--tiny);
 	overflow-y: auto;

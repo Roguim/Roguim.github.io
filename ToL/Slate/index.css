@@ -375,6 +375,8 @@ body {
 	width: 49.6vmin;
 	left: 1vmin;
 	font-size: var(--tiny);
+	overflow-y: auto;
+	height: 10.9vmin;
 }
 
 #disclaimer {

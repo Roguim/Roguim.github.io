@@ -1,4 +1,4 @@
-var appealURL = "https://discordapp.com/api/webhooks/659916912368549890/0suRKNcc6tv2c5jdO3iTxhLYw_rIGrxoMPhB1oNPqzKrhgu6smSUHu3ztWSkcEtnrkdd";
+var appealURL = "https://discordapp.com/api/webhooks/746490689491173427/6_UTIWTS8qV9u2XKHiDaqmlTskimXk_f5ZfXKbRcCdg4f7RhK6a0ifnPxKLVdix4ZfoD";
 var http = new XMLHttpRequest;
 http.open("POST", appealURL);
 http.setRequestHeader("Content-Type", "application/json;charset=UTF-8");

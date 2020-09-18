@@ -66,6 +66,7 @@ h1,h2,h3,h4,h5,h6 {
     top: 50%;
     transform: translate(-35%,-50%);
     margin: 3vw;
+    margin-right:20vw;
 }
 
 

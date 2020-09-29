@@ -1,2 +1,2 @@
 # Roguim.github.io
-My Githubio
+The code hub for my website. 

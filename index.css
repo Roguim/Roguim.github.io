@@ -20,8 +20,8 @@ body {
     border-radius: 18px;
 }
 @keyframes bubble {
-	0% {top: -15vh}
-	100% {top: -115vh}
+	0% {top: -44vh}
+	100% {top: -156vh}
 }
 .footlinks:after, .footlinks:before{
 	content:" ";
